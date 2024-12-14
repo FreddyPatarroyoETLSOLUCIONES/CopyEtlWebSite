@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './nabvar.component.css'
 })
 export class NabvarComponent {
-
+  menuItems = [];
 }

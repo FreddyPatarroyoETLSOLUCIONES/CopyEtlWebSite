@@ -10,7 +10,7 @@
     letter-spacing: 0px;
     border: none;
     transform-origin: 50% 50%;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     -webkit-animation-duration: .2s;
     animation-duration: .2s;
     -webkit-animation-timing-function: cubic-bezier(.25, .46, .45, .94);
@@ -22,6 +22,9 @@
     -moz-tap-highlight-color: rgba(0, 0, 0, 0) !important;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
     box-sizing: content-box;
+    --box_shadow: -5px 9px 10px -3px rgba(87, 87, 87, 0.082);
+   /* background-color: var(--background_color);*/
+   
 }
 
 body {
@@ -31,7 +34,7 @@ body {
     --background_color: #F7FDFF; /* Fondo general */
     --text_color: #0D0E11; /* Texto principal */
     --muted_text_color: #1D1E1C; /* Texto secundario */
-    --hover_color: #293241; /* Hover sobre enlaces o botones */
+    --hover_color: #00b2edc0; /* Hover sobre enlaces o botones */
     --card_color: rgba(255, 255, 255, 0.64); /* Blanco con 64% de opacidad */
     --card_container_color: #FFFFFF; /* Fondo del contenedor (tema claro) */
     --font_family_primary: 'Sora', sans-serif;
@@ -45,7 +48,8 @@ body {
     --gradient_box_primary: linear-gradient(135deg, #00B1ED, #007ACC); /* Degradado azul a morado */
     --gradient_box_secondary: linear-gradient(135deg, #007ACC, #00B1ED); /* Degradado morado a azul */
     --box_border_width: 4px; /* Grosor del borde */
-    --box_border_radius: 12px; /* Radio del borde para esquinas redondeadas */  
+    --box_border_radius: 12px; /* Radio del borde para esquinas redondeadas */ 
+    --box_border_radius_options: 15px; /* Radio del borde para esquinas redondeadas */ 
 }
 
 @media(prefers-color-scheme: dark){
@@ -56,8 +60,8 @@ body {
         --background_color: #0D0E11; /* Fondo general */
         --text_color: #FFFFFF; /* Texto principal */
         --muted_text_color: #FFFFFF; /* Texto secundario */
-        --hover_color: #007ACC; /* Hover sobre enlaces o botones */
+        --hover_color: #00b2edc0; /* Hover sobre enlaces o botones */
         --card_color: rgba(13, 14, 17, 0.64); /* Gris oscuro con 64% de opacidad */
-        --card_container_color: #293241; /* Fondo del contenedor (tema oscuro) */
+        --card_container_color: #293241; /* Fondo del contenedor (tema oscuro) */ 
     }
 }
