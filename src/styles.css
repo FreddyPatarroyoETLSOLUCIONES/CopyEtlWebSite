@@ -51,6 +51,10 @@ body {
     --box_border_radius_options: 15px; /* Radio del borde para esquinas redondeadas */ 
 }
 
+body{
+    background-color: var(--background_color);
+}
+
 @media(prefers-color-scheme: dark){
     body {
         --primary_color: #00B1ED; /* Azul primario */
