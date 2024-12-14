@@ -23,7 +23,6 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
     box-sizing: content-box;
     --box_shadow: -5px 9px 10px -3px rgba(87, 87, 87, 0.082);
-   /* background-color: var(--background_color);*/
    
 }
 
