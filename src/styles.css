@@ -27,8 +27,10 @@
 }
 
 body {
+    --withe: #ffff;
+    --black: #000000;
     --primary_color: #00B1ED; /* Azul primario */
-    --secondary_color: #007ACC; /* Morado secundario */
+    --secondary_color: #9A61EE; /* Morado secundario */
     --accent_color: #00B1ED; /* Fondo de secciones claras */
     --background_color: #F7FDFF; /* Fondo general */
     --text_color: #0D0E11; /* Texto principal */
@@ -44,7 +46,8 @@ body {
     --font_weight_extra_bold: 800; /* Sora Extra Bold */
     --font_weight_semi_bold: 600; /* Sora y Quicksand Semi Bold */
     --font_weight_regular: 400; /* Quicksand Regular */
-    --gradient_box_primary: linear-gradient(135deg, #00B1ED, #007ACC); /* Degradado azul a morado */
+    --font_weight_light: 300;
+    --gradient_box_primary: linear-gradient(180deg, #00B1ED, #5A8DFD, #9A61EE);/* Degradado azul a morado */
     --gradient_box_secondary: linear-gradient(135deg, #007ACC, #00B1ED); /* Degradado morado a azul */
     --box_border_width: 4px; /* Grosor del borde */
     --box_border_radius: 12px; /* Radio del borde para esquinas redondeadas */ 
@@ -57,8 +60,10 @@ body{
 
 @media(prefers-color-scheme: dark){
     body {
+        --withe: #000000;
+        --black: #ffff;
         --primary_color: #00B1ED; /* Azul primario */
-        --secondary_color: #007ACC; /* Morado secundario */
+        --secondary_color: #9A61EE; /* Morado secundario */
         --accent_color: #1D2126; /* Fondo de secciones oscuras */
         --background_color: #0D0E11; /* Fondo general */
         --text_color: #FFFFFF; /* Texto principal */
@@ -66,5 +71,33 @@ body{
         --hover_color: #00b2edc0; /* Hover sobre enlaces o botones */
         --card_color: rgba(13, 14, 17, 0.64); /* Gris oscuro con 64% de opacidad */
         --card_container_color: #293241; /* Fondo del contenedor (tema oscuro) */ 
+        
     }
+}
+
+
+/* ------Estilo general botones-------- */
+.custom_button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    padding: 12px 24px;
+    background-color: var(--primary_color);
+    color: white;
+    font-size: 1rem;
+    font-weight: var(--font_weight_semi_bold);
+    border: none;
+    border-radius: var(--box_border_radius_options);
+    cursor: pointer;
+    text-align: center;
+}
+.custom_button:hover {
+    background-color: var(--hover_color);
+    box-shadow: 0 0 0 2px var(--background_color),
+    0 0 0 3px #00b2edc0
+}
+.button_icon {
+    width: 20px; 
+    height: 20px;
 }

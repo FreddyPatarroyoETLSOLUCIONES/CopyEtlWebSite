@@ -4,10 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background_color);
-    position: absolute;
-    margin-top: -85px;
-    z-index: -1;
 }
 .container{
     height: 350px;

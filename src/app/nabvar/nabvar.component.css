@@ -11,9 +11,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--background_color);
-    padding: 10px 20px;
-    margin: 10px 100px;
+    margin: 20px 100px;
     border-radius: var(--box_border_radius);
+    z-index: 100;
   }
   
   .logo {
@@ -76,19 +76,22 @@
     display: block;
     position: absolute;
     top: 100%;
-    left: 30%;
-    background-color: var(--card_container_color);
-    list-style: none;
+    left: 0;
     padding: 0;
-    margin: 0;
-    min-width: 160px;
     border-radius: 0px 20px 20px 20px;
+    min-width: 160px;  
     opacity: 0;
     transform: translateY(-10px);
-    pointer-events: none; 
+    pointer-events: none;   
+    z-index: 1000;
+  }
+  .dropdown-menu-items{
+    background-color: var(--card_container_color);
+    list-style: none;
+    margin-top: 10px;
+    border-radius: 0px 20px 20px 20px;
     box-shadow: var(--box_shadow);
   }
-  
   .dropdown:hover .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
