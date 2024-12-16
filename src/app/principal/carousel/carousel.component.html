@@ -1,23 +1,25 @@
-<div class="logos">
-    <div class="logos_slide">
-        <img src="img/client_1.png" />
-        <img src="img/client_2.png" />
-        <img src="img/client_3.png" />
-        <img src="img/client_4.png" />
-        <img src="img/client_5.png" />
-        <img src="img/client_1.png" />
-        <img src="img/client_2.png" />
-        <img src="img/client_3.png" />
+<p-galleria 
+  #galleria
+  [value]="images" 
+  [(activeIndex)]="activeIndex" 
+  [numVisible]="3" 
+  [showThumbnails]="showThumbnails" 
+  [showItemNavigators]="true" 
+  [showItemNavigatorsOnHover]="true" 
+  [circular]="true" 
+  [autoPlay]="true" 
+  [transitionInterval]="3000" 
+  [containerStyle]="{ 'max-width': '800px' }"
+  [containerClass]="galleriaClass()">
+  
+  <!-- Contenido del carrusel -->
+  <ng-template pTemplate="item" let-item>
+    <div class="carousel-item">
+      <img [src]="item.itemImageSrc" alt="{{ item.alt }}" />
+      <div class="carousel-caption">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.alt }}</p>
+      </div>
     </div>
-
-    <div class="logos_slide">
-        <img src="img/client_1.png" />
-        <img src="img/client_2.png" />
-        <img src="img/client_3.png" />
-        <img src="img/client_4.png" />
-        <img src="img/client_5.png" />
-        <img src="img/client_1.png" />
-        <img src="img/client_2.png" />
-        <img src="img/client_3.png" />
-    </div>
-</div>
+  </ng-template>
+</p-galleria>

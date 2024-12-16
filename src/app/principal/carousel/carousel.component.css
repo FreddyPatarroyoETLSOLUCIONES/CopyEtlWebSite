@@ -1,54 +1,22 @@
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.logos {
-    overflow: hidden;
-    background: var(--background_color);
-    white-space: nowrap;
+.carousel-item {
     position: relative;
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logos:before,
-.logos:after {
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .carousel-caption {
     position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-}
-
-.logos:before {
+    bottom: 20px;
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--white));
-}
-
-.logos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--white));
-}
-
-.logos:hover .logos_slide {
-    animation-play-state: paused;
-}
-
-.logos_slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-}
-
-.logos_slide img {
-    height: 50px;
-    margin: 0 40px;
-}
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 1.2em;
+    text-align: center;
+  }
+  

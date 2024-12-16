@@ -5,13 +5,15 @@ import { PrincipalComponent } from './principal/principal.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
     NabvarComponent,
-    PrincipalComponent
+    PrincipalComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'EtlWebSite';
+  userInput: string = '';
 }
