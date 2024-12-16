@@ -2,7 +2,7 @@
     background-color: var(--background_form);
     width: 80%;
     border-radius: 0px 40px 0px 40px;
-    padding: 40px;
+    padding: 60px 40px;
     margin: auto;
 }
 
@@ -38,8 +38,8 @@
 
 .formContent .form .form_item textarea{
     display: block;
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 200px;
+    max-height: 200px;
     resize: none;
     overflow: auto;
 }
@@ -49,7 +49,7 @@
     min-width: 90%;
     max-width: 90%;
     border-radius: 40px;
-    padding: 10px;
+    padding: 20px;
     padding-left: 30px;
     background: var(--background_input);
     color: var(--text_color);
@@ -66,6 +66,12 @@
     margin-top: 30px;
     background: var(--pure_primary_color);
     cursor: pointer;
+}
+
+.formContent .form .form_item .btn_form:hover {
+    background-color: var(--hover_color);
+    box-shadow: 0 0 0 2px var(--background_color),
+    0 0 0 3px var(--hover_color)
 }
 
 .formContent .form .form_item .btn_form p {
