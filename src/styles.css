@@ -6,7 +6,7 @@
     padding: 0px 0px 0px;
     margin: 0px 0px 0px;
     outline: none;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Sora', sans-serif;
     letter-spacing: 0px;
     border: none;
     transform-origin: 50% 50%;
@@ -24,11 +24,12 @@
     box-sizing: content-box;
     --box_shadow: -5px 9px 10px -3px rgba(87, 87, 87, 0.082);
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 body {
     --pure_white: #ffff;
-    --pure_block: #000000;
+    --pure_black: #000000;
     --withe: #ffff;
     --black: #000000;
     --pure_primary_color: #00B1ED;
@@ -43,7 +44,6 @@ body {
     --background_input: #EDF9FF; /* Fondo del formulario (tema claro) */
     --card_color: rgba(255, 255, 255, 0.64); /* Blanco con 64% de opacidad */
     --card_container_color: #FFFFFF; /* Fondo del contenedor (tema claro) */
-    --font_family_primary: 'Sora', sans-serif;
     --font_family_secondary: 'Quicksand', sans-serif;
     --font_weight_extra-bold: 800; /* Sora Extra Bold */
     --font_weight_semi_bold: 600; /* Sora y Quicksand Semi Bold */
@@ -66,7 +66,7 @@ body{
 @media(prefers-color-scheme: dark){
     body {
         --pure_white: #ffff;
-        --pure_block: #000000;
+        --pure_black: #000000;
         --pure_primary_color: #00B1ED;
         --withe: #000000;
         --black: #ffff;
