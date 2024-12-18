@@ -5,6 +5,7 @@ import { ProductsComponent } from './products/products.component';
 import { AutoScrollComponent } from './auto-scroll/auto-scroll.component';
 import { CounterComponent } from './counter/counter.component';
 import { SkillsComponent } from './skills/skills.component';
+import { InfoValuesComponent } from './info-values/info-values.component';
 
 @Component({
   selector: 'app-principal',
@@ -14,7 +15,8 @@ import { SkillsComponent } from './skills/skills.component';
     ProductsComponent,
     AutoScrollComponent,
     CounterComponent,
-    SkillsComponent
+    SkillsComponent,
+    InfoValuesComponent
   ],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css'

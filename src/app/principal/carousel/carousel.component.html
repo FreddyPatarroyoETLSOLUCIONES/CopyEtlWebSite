@@ -5,12 +5,14 @@
     nuestros clientes a través de nuestros servicios.
   </p>
 </div>
+
 <p-carousel
-  [value]="servicios"
+  [value]="servicios.concat(servicios)"
   [numVisible]="2"
   [numScroll]="1"
   [circular]="true"
-  [autoplayInterval]= "5000"
+  [autoplayInterval]= "3000"
+  [showIndicators]="false"
 >
   <ng-template pTemplate="item" let-servicio>
     <div class="servicio-card">

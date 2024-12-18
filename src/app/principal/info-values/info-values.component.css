@@ -1,0 +1,41 @@
+.galleria-container {
+    width: 100%;
+    height: 50vh;
+    background: var(--background_color);
+    margin-top: 30px;
+    
+  }
+  
+  .service-item {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  
+  .service-text {
+    position: absolute;
+    bottom: 50%;
+    right: 15%;
+    color: var(--pure_white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 500px;
+  }
+  
+  .service-text h3 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+  }
+  
+  .service-text p {
+    margin: 0;
+    font-size: 1.1rem;
+  }

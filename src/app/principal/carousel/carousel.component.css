@@ -13,6 +13,8 @@
     border-radius: 10px;
     background-color: var(--background_color);
     overflow: hidden;
+    margin-bottom: 100px;
+    margin-top: 30px;
 }
 
 .servicio-header {
@@ -25,7 +27,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-weight: var(--font_weight_extra-bold);
 }
 
@@ -39,20 +41,20 @@
 
 .servicio-content {
     display: flex;
-    align-items: center;
+    align-items:end;
     gap: 1.5rem;
     max-width: 100%;
 }
 
 .servicio-content img {
-    max-width: 50%;
+    max-width: 60%;
     border-radius: 55px;
     -webkit-box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
     -moz-box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
     box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
 }
 .text-content{
-    max-width: 600px;
+  margin-bottom: 30px;
 }
 .text-content h3 {
     font-size: 2rem;
@@ -65,6 +67,7 @@
 .text-content p {
     color: var(--text_color);
     margin-bottom: 20px;
+    font-weight: 100;
 }
 
 .p-carousel-prev,
