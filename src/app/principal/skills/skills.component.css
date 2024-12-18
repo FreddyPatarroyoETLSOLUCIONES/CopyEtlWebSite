@@ -1,0 +1,69 @@
+.skills{
+    width: 100%;
+    padding: 5% 4% 4% 4%;
+    background: var(--accent_color);
+    margin-bottom: 50px;
+}
+
+.skills .content_skills{
+    position: relative;
+    width: 80%;
+    background: var(--background_skills);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: auto;
+    left: 10%;
+    border-radius: 40px;
+}
+
+.skills .content_skills img{
+    width: 35%;
+    position: relative;
+    z-index: 2;
+    right: 15%;
+    display: inline;
+    object-fit: cover;
+}
+
+.skills .content_skills .info_skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 10%;
+    padding: 5%;
+}
+
+.skills .content_skills .info_skills .title{
+    color: var(--text_color);
+    text-align: left;
+    font-weight: var(--font_weight_extra-bold);
+    font-size: 1.8rem;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.skills .content_skills .info_skills .skills_list{
+    color: var(--text_color);
+    position: relative;
+    left: 3%;
+    width: 100%;
+}
+
+.skills .content_skills .info_skills .skills_list ul li{
+    margin-bottom: 2%;
+    list-style-type: circle;
+    font-size: 1.1rem;
+}
+
+.skills .content_skills .info_skills .skills_list ul li::first-line{
+    margin-left: 20px;
+}
+
+.skills .content_skills .info_skills .skills_list ul li::marker{
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--pure_primary_color);
+    font-weight:  var(----font_weight_semi_bold);
+}
