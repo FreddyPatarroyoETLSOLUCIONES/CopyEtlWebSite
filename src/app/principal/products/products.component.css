@@ -1,0 +1,31 @@
+.products{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.products .title {
+    color: var(--pure_primary_color);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight: var(--font_weight_extra-bold);
+    font-size: 2rem;
+}
+
+.products .text{
+    color: var(--text_color);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 50px;
+} 
+
+.products .components{
+    background: var(--background_form);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 40px;
+}

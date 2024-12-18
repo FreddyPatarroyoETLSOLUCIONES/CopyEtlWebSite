@@ -20,7 +20,7 @@ export class CarouselComponent {
     this.servicios = [
       {
         title: 'Consultoría',
-        description: 'A través de las mejores prácticas de TI, damos soluciones de gran valor a nuestros clientes a través de nuestros servicios.',
+        description: 'Servicios de asesoría integral en gestión de procesos para garantizar que las soluciones tecnológicas.',
         image: 'img/consultoria.jpg'
       },
       {
