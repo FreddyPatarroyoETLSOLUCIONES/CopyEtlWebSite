@@ -1,25 +1,28 @@
-<p-galleria 
-  #galleria
-  [value]="images" 
-  [(activeIndex)]="activeIndex" 
-  [numVisible]="3" 
-  [showThumbnails]="showThumbnails" 
-  [showItemNavigators]="true" 
-  [showItemNavigatorsOnHover]="true" 
-  [circular]="true" 
-  [autoPlay]="true" 
-  [transitionInterval]="3000" 
-  [containerStyle]="{ 'max-width': '800px' }"
-  [containerClass]="galleriaClass()">
-  
-  <!-- Contenido del carrusel -->
-  <ng-template pTemplate="item" let-item>
-    <div class="carousel-item">
-      <img [src]="item.itemImageSrc" alt="{{ item.alt }}" />
-      <div class="carousel-caption">
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.alt }}</p>
+<div class="servicio-header">
+  <h2 class="title">SERVICIOS TI</h2>
+  <p class="description">
+    A través de las mejores prácticas de TI, damos soluciones de gran valor a
+    nuestros clientes a través de nuestros servicios.
+  </p>
+</div>
+<p-carousel
+  [value]="servicios"
+  [numVisible]="1"
+  [numScroll]="1"
+  [circular]="true"
+  [autoplayInterval]="5000"
+  [showIndicators]="false"
+>
+  <ng-template pTemplate="item" let-servicio>
+    <div class="servicio-card">
+      <div class="servicio-content">
+        <img [src]="servicio.image" alt="{{ servicio.title }}" />
+        <div class="text-content">
+          <h3>{{ servicio.title }}</h3>
+          <p>{{ servicio.description }}</p>
+          <button pButton type="button" label="Ver más" icon="pi pi-arrow-right"></button>
+        </div>
       </div>
     </div>
   </ng-template>
-</p-galleria>
+</p-carousel>

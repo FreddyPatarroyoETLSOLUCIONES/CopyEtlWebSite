@@ -1,46 +1,57 @@
 import { Component } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
+import { CarouselModule } from 'primeng/carousel';
+
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [GalleriaModule],
+  imports: [GalleriaModule,
+    CarouselModule
+  ],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent {
-  images: any[] = [];
-  activeIndex: number = 0;
-  showThumbnails: boolean = false; // Opcional: ocultar miniaturas
-  fullscreen: boolean = false;
+  servicios: any[];
+  //responsiveOptions: any[];
 
   constructor() {
-    // Datos del carrusel (pueden ser rutas locales o URLs externas)
-    this.images = [
+    this.servicios = [
       {
-        itemImageSrc: 'img/div1.jpg',
-        title: 'Div 1',
-        alt: 'Primer div'
+        title: 'Consultoría',
+        description: 'A través de las mejores prácticas de TI, damos soluciones de gran valor a nuestros clientes a través de nuestros servicios.',
+        image: 'img/consultoria.jpg'
       },
       {
-        itemImageSrc: 'img/div2.jpg',
-        title: 'Div 2',
-        alt: 'Segundo div'
+        title: 'Innovación',
+        description: 'Servicios de incluyen procesos de reingeniería, analítica, gestión, y procedimientos de datos para identificar causa raíz de problemas en una organización que sean solucionables mediante el uso de tecnología.',
+        image: 'img/innovacion.jpg'
       },
       {
-        itemImageSrc: 'img/div3.jpg',
-        title: 'Div 3',
-        alt: 'Tercer div'
-      }
+        title: 'BPO',
+        description: 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.',
+        image: 'img/bpo.jpg'
+      },
     ];
-  }
 
-  // Métodos auxiliares (opcional para funcionalidad adicional)
-  galleriaClass() {
-    return this.fullscreen ? 'custom-galleria-fullscreen' : '';
-  }
-
-  toggleFullScreen() {
-    this.fullscreen = !this.fullscreen;
+    /*
+    this.responsiveOptions = [
+      {
+        breakpoint: '1024px',
+        numVisible: 1,
+        numScroll: 1,
+      },
+      {
+        breakpoint: '768px',
+        numVisible: 1,
+        numScroll: 1,
+      },
+      {
+        breakpoint: '560px',
+        numVisible: 1,
+        numScroll: 1,
+      },
+    ];  */
   }
 }
