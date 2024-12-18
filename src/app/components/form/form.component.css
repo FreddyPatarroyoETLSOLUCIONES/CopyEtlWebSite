@@ -2,12 +2,12 @@
     background-color: var(--background_form);
     width: 80%;
     border-radius: 0px 40px 0px 40px;
-    padding: 60px 40px;
+    padding: 5% 40px;
     margin: auto;
 }
 
 .formContent .title_form{
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 .formContent .title_form .title{

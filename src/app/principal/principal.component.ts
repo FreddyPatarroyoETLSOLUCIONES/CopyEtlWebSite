@@ -4,6 +4,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ProductsComponent } from './products/products.component';
 import { AutoScrollComponent } from './auto-scroll/auto-scroll.component';
 import { CounterComponent } from './counter/counter.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @Component({
   selector: 'app-principal',
@@ -12,7 +13,8 @@ import { CounterComponent } from './counter/counter.component';
     CarouselComponent,
     ProductsComponent,
     AutoScrollComponent,
-    CounterComponent
+    CounterComponent,
+    SkillsComponent
   ],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css'

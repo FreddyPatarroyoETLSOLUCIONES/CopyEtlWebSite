@@ -41,6 +41,7 @@ body {
     --muted_text_color: #1D1E1C; /* Texto secundario */
     --hover_color: #00b2edc0; /* Hover sobre enlaces o botones */
     --background_form: #C5D9E4; /* Fondo del formulario (tema claro) */
+    --background_skills: #ffffff; /* Fondo del skills (tema claro) */
     --background_input: #EDF9FF; /* Fondo del formulario (tema claro) */
     --card_color: rgba(255, 255, 255, 0.64); /* Blanco con 64% de opacidad */
     --card_container_color: #FFFFFF; /* Fondo del contenedor (tema claro) */
@@ -78,6 +79,7 @@ body{
         --muted_text_color: #FFFFFF; /* Texto secundario */
         --hover_color: #00b2edc0; /* Hover sobre enlaces o botones */
         --background_form: #293241; /* Fondo del formulario (tema oscuro) */
+        --background_skills: #293241; /* Fondo del skills (tema oscuro) */
         --background_input: #1C222C; /* Fondo del formulario (tema oscuro) */
         --card_color: rgba(13, 14, 17, 0.64); /* Gris oscuro con 64% de opacidad */
         --card_container_color: #293241; /* Fondo del contenedor (tema oscuro) */ 
