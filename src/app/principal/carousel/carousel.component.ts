@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-import { GalleriaModule } from 'primeng/galleria';
 import { CarouselModule } from 'primeng/carousel';
 
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [GalleriaModule,
-    CarouselModule
-  ],
+  imports: [CarouselModule],
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  styleUrls: ['./carousel.component.css'],
+  host: { ngSkipHydration: 'true' },
 })
 export class CarouselComponent {
   servicios: any[];

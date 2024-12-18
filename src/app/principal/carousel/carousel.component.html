@@ -7,11 +7,10 @@
 </div>
 <p-carousel
   [value]="servicios"
-  [numVisible]="1"
+  [numVisible]="2"
   [numScroll]="1"
   [circular]="true"
-  [autoplayInterval]="5000"
-  [showIndicators]="false"
+  [autoplayInterval]= "5000"
 >
   <ng-template pTemplate="item" let-servicio>
     <div class="servicio-card">
@@ -23,8 +22,7 @@
           <button class="custom_button">
             <span class="button_text">Ver más</span>
             <img src="icons/arrow_icon.png" alt="Arrow Icon" class="button_icon">
-        </button>
-        
+          </button>
         </div>
       </div>
     </div>
