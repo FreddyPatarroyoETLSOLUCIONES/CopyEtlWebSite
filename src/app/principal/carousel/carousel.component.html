@@ -5,10 +5,10 @@
     nuestros clientes a través de nuestros servicios.
   </p>
 </div>
-
-<p-carousel
+<div class="margin_carousel">
+  <p-carousel
   [value]="servicios.concat(servicios)"
-  [numVisible]="2"
+  [numVisible]="1"
   [numScroll]="1"
   [circular]="true"
   [autoplayInterval]= "3000"
@@ -30,3 +30,5 @@
     </div>
   </ng-template>
 </p-carousel>
+
+</div>

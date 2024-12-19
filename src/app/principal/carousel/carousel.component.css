@@ -1,3 +1,7 @@
+.margin_carousel{
+    width: calc(100% - 200px);
+    margin: 0 auto;
+}
 .p-carousel-items-container {
     position: relative;
     overflow: visible;
@@ -5,16 +9,15 @@
 
 .servicio-card {
     position: relative;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
     border-radius: 10px;
     background-color: var(--background_color);
     overflow: hidden;
-    margin-bottom: 100px;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .servicio-header {
@@ -35,19 +38,19 @@
     color: var(--text_color);
     font-size: 1.2rem;
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 50%;
     font-weight: var(--font_weight_light);
 }
 
 .servicio-content {
     display: flex;
-    align-items:end;
+    align-items:center;
     gap: 1.5rem;
     max-width: 100%;
 }
 
 .servicio-content img {
-    max-width: 60%;
+    max-width: 50%;
     border-radius: 55px;
     -webkit-box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
     -moz-box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
@@ -79,4 +82,8 @@
 
 ul {
     display: none;
+}
+
+.p-icon{
+    margin: 20px;
 }
