@@ -30,6 +30,20 @@
     border-radius: 40px;
 }
 
-.products .components .product{
+/* .products .components .product{
     
+} */
+
+.products .components .product .info{
+    background: var(--withe);
+}
+
+.products .components .product .info .title_info{
+    color: var(--text_color);
+    font-size: 1.5rem;
+    font-weight: var(--font_weight_semi_bold);
+}
+
+.products .components .product .info .body_info p{
+    color: var(--text_color);
 }

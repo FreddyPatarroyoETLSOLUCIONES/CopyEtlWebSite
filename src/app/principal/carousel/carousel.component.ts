@@ -19,17 +19,17 @@ export class CarouselComponent {
       {
         title: 'Consultoría',
         description: 'Servicios de asesoría integral en gestión de procesos para garantizar que las soluciones tecnológicas.',
-        image: 'img/consultoria.jpg'
+        image: './assets/images/consultoria.jpg'
       },
       {
         title: 'Innovación',
         description: 'Servicios de incluyen procesos de reingeniería, analítica, gestión, y procedimientos de datos para identificar causa raíz de problemas en una organización que sean solucionables mediante el uso de tecnología.',
-        image: 'img/innovacion.jpg'
+        image: './assets/images/innovacion.jpg'
       },
       {
         title: 'BPO',
         description: 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.',
-        image: 'img/bpo.jpg'
+        image: './assets/images/bpo.jpg'
       },
     ];
 
