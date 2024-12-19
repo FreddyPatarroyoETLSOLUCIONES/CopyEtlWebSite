@@ -10,7 +10,7 @@
 
 .logos {
     overflow: hidden;
-    background: var(--background_color);
+    background: var(--background_form);
     white-space: nowrap;
     position: relative;
     height: 12vh;
