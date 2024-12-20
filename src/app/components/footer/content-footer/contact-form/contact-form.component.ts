@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormComponent } from '../../../components/form/form.component';
+import { FormComponent } from '../../../../items/form/form.component';
 
 @Component({
   selector: 'app-contact-form',
