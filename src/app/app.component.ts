@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NabvarComponent } from './nabvar/nabvar.component'; 
-import { PrincipalComponent } from './principal/principal.component';
-import { FooterComponent } from './footer/footer.component';
-
+import { NabvarComponent } from './components/nabvar/nabvar.component';
+import { PrincipalComponent } from './components/principal/principal.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
