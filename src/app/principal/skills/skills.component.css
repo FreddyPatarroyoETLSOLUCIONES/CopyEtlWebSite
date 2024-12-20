@@ -2,6 +2,7 @@
     width: 100%;
     padding: 5% 8% 4% 4%;
     background: var(--accent_color);
+    box-shadow: var(--box-shadow_two_sides);
 }
 
 .skills .content_skills{
@@ -14,6 +15,7 @@
     margin: auto;
     left: 10%;
     border-radius: 40px;
+    box-shadow: var(--box_shadow);
 }
 
 .skills .content_skills img{

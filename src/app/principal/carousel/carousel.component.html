@@ -1,34 +1,35 @@
-<div class="servicio-header">
-  <h2 class="title">SERVICIOS TI</h2>
-  <p class="description">
-    A través de las mejores prácticas de TI, damos soluciones de gran valor a
-    nuestros clientes a través de nuestros servicios.
-  </p>
-</div>
-<div class="margin_carousel">
-  <p-carousel
-  [value]="servicios.concat(servicios)"
-  [numVisible]="1"
-  [numScroll]="1"
-  [circular]="true"
-  [autoplayInterval]= "5000"
-  [showIndicators]="false"
->
-  <ng-template pTemplate="item" let-servicio>
-    <div class="servicio-card">
-      <div class="servicio-content">
-        <img [src]="servicio.image" alt="{{ servicio.title }}" />
-        <div class="text-content">
-          <h3>{{ servicio.title }}</h3>
-          <p>{{ servicio.description }}</p>
-          <button class="custom_button">
-            <span class="button_text">Ver más</span>
-            <img src="./assets/icons/arrow_icon.png" alt="Arrow Icon" class="button_icon">
-          </button>
+<div class="content_servicios">
+  <div class="servicio-header">
+    <h2 class="title">SERVICIOS TI</h2>
+    <p class="description">
+      A través de las mejores prácticas de TI, damos soluciones de gran valor a
+      nuestros clientes a través de nuestros servicios.
+    </p>
+  </div>
+  <div class="margin_carousel">
+    <p-carousel
+      [value]="servicios.concat(servicios)"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]= "5000"
+      [showIndicators]="false"
+    >
+      <ng-template pTemplate="item" let-servicio>
+        <div class="servicio-card">
+          <div class="servicio-content">
+            <img [src]="servicio.image" alt="{{ servicio.title }}" />
+            <div class="text-content">
+              <h3>{{ servicio.title }}</h3>
+              <p>{{ servicio.description }}</p>
+              <button class="custom_button">
+                <span class="button_text">Ver más</span>
+                <img src="./assets/icons/arrow_icon.png" alt="Arrow Icon" class="button_icon">
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </ng-template>
-</p-carousel>
-
+      </ng-template>
+    </p-carousel>
+  </div>
 </div>

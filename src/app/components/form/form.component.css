@@ -4,6 +4,7 @@
     border-radius: 0px 40px 0px 40px;
     padding: 5% 40px;
     margin: auto;
+    box-shadow: var(--box_shadow);
 }
 
 .formContent .title_form{

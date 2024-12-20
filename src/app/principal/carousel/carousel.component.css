@@ -1,3 +1,7 @@
+.content_servicios{
+    margin: 50px 0px 50px 0px;
+}
+
 .margin_carousel{
     width: calc(100% - 200px);
     margin: 0 auto;

@@ -5,12 +5,15 @@
 }
 
 .products .title {
-    color: var(--pure_primary_color);
     width: 70%;
     margin: auto;
+}
+
+.products .title h2{
+    color: var(--pure_primary_color);
     text-align: center;
     font-weight: var(--font_weight_extra-bold);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .products .text{
@@ -38,6 +41,7 @@
     width: 18%;
     background: var(--card_color);
     border-radius: 40px;
+    box-shadow: var(--box_shadow);
 }
 
 .products .components .product:first-child{
@@ -54,9 +58,6 @@
 }
 
 .products .components .product .content_info .info .title_info{
-    color: var(--text_color);
-    font-size: 1.4rem;
-    font-weight: var(--font_weight_semi_bold);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,6 +69,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    color: var(--text_color);
+    font-size: 1.5rem;
+    font-weight: var(--font_weight_semi_bold);
 }
 
 .products .components .product .content_info .info .title_info .icon{
@@ -81,7 +85,7 @@
 .products .components .product .content_info .info .body_info .text_info{
     height: 10vh;
     overflow: hidden;
-
+    width: 80%;
 }
 
 .products .components .product .content_info .info .body_info .text_info p{

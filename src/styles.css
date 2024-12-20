@@ -22,7 +22,6 @@
     -moz-tap-highlight-color: rgba(0, 0, 0, 0) !important;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
     box-sizing: content-box;
-    --box_shadow: -5px 9px 10px -3px rgba(87, 87, 87, 0.082);
     box-sizing: border-box;
     line-height: 1.5;
 }
@@ -56,8 +55,10 @@ body {
     --gradient_box_primary: linear-gradient(180deg, #00B1ED, #5A8DFD, #9A61EE);/* Degradado azul a morado */
     --gradient_box_secondary: linear-gradient(135deg, #007ACC, #00B1ED); /* Degradado morado a azul */
     --box_border_width: 4px; /* Grosor del borde */
-    --box_border_radius: 12px; /* Radio del borde para esquinas redondeadas */ 
+    --box_border_radius: 40px; /* Radio del borde para esquinas redondeadas */ 
     --box_border_radius_options: 15px; /* Radio del borde para esquinas redondeadas */ 
+    --box_shadow: -5px 9px 10px -3px rgba(87, 87, 87, 0.35);
+    --box-shadow_two_sides: 0px 0px 20px 3px rgba(87, 87, 87, 0.35);
 }
 
 body{
@@ -83,7 +84,8 @@ body{
         --background_input: #1C222C; /* Fondo del formulario (tema oscuro) */
         --card_color: rgba(13, 14, 17, 0.64); /* Gris oscuro con 64% de opacidad */
         --card_container_color: #293241; /* Fondo del contenedor (tema oscuro) */ 
-        
+        --box_shadow: -5px 9px 10px -3px rgba(133, 133, 133, 0.2);
+        --box-shadow_two_sides: 0px 0px 20px 3px rgba(133, 133, 133, 0.2);
     }
 }
 
