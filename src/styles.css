@@ -113,3 +113,9 @@ body{
     width: 20px; 
     height: 20px;
 }
+.p-galleria-indicator-onitem.p-galleria-indicators-bottom .p-galleria-indicators{
+    background: none;
+}
+.p-galleria.p-galleria-indicator-onitem .p-galleria-indicators .p-galleria-indicator button{
+    margin: 5px;
+}
