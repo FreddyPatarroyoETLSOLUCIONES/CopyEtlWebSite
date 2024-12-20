@@ -8,19 +8,23 @@
     </div>
 
     <div class="components">
-        <div class="product">
-            <div class="info">
-                <div class="title_info">
-                    <h3>Infocusnews</h3>
-                    <div class="icon">
-                        <img src="./assets/icons/text.png" alt="">
+        <div class="product" *ngFor="let product of products; index as i" [attr.id]="'product'+(i+1)" [ngClass]="{'active': (i+1) == 1}">
+            <div class="content_info" (mouseover)="changeHover(i+1)" (mouseleave)="changeHover(0)">
+                <div class="info">
+                    <div class="title_info">
+                        <h3> {{product.title}}</h3>
+                        <div class="icon">
+                            <img src= {{product.icon}} alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="body_info"> 
-                    <p>Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos…</p>
-                    <button>
-                        <p> ver mas </p> <img src="./assets/icons/cursor.png" alt=""> 
-                    </button>
+                    <div class="body_info"> 
+                        <div class="text_info">
+                            <p> {{product.text}} </p>
+                        </div>
+                        <a class="button">
+                            <p> ver mas </p> <img src="./assets/icons/cursor.png" alt=""> 
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
