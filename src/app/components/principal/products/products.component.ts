@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Text } from '../../../models/texts';
 
 @Component({
   selector: 'app-products',
@@ -8,20 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './products.component.css'
 })
 export class ProductsComponent implements OnInit{
-
+  products!:any[];
+  title!:string;
+  text!:string;
+  
   elementProduct1!:any;
   elementProduct2!:any;
   elementProduct3!:any;
   elementProduct4!:any;
-
-  products:any[] = [
-    {title: 'Infocusnews', icon: './assets/icons/text.png', text: 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos…'},
-    {title: 'ETL (BI) Business Intelligence', icon: './assets/icons/db.png', text: 'Servicio de gestión en nube o infraestructura propia del cliente para diseñar…'},
-    {title: 'Motor de Sugerencias', icon: './assets/icons/start.png', text: 'El motor de sugerencia mide las preferencias de los clientes a cada una de ellas…'},
-    {title: 'Innovación', icon: './assets/icons/podio.png', text: 'Identificación de las preferencias individuales de sus clientes con máximo detalle…'},
-  ]
   
   ngOnInit(): void {
+    this.title = Text.Principal.Products.Title1;
+    this.text = Text.Principal.Products.Text1;
+    this.products = Text.Principal.Products.ProductsList;
+    
     this.elementProduct1 = document.getElementById('product1');
     this.elementProduct2 = document.getElementById('product2');
     this.elementProduct3 = document.getElementById('product3');
