@@ -9,20 +9,19 @@
 
 .servicio-card {
     position: relative;
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     background-color: var(--background_color);
     overflow: hidden;
-    margin: 30px;
+    margin: 100px 0;
+    border-radius: 50px;
 }
 
 .servicio-header {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .servicio-header .title {
@@ -48,16 +47,13 @@
     gap: 1.5rem;
     max-width: 100%;
 }
-
-.servicio-content img {
-    max-width: 50%;
-    border-radius: 55px;
-    -webkit-box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
-    -moz-box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
-    box-shadow: -20px -16px 0px -3px rgba(0,177,237,1);
+.servicio-content .circle1{
+    position: absolute;
 }
-.text-content{
-  margin-bottom: 30px;
+.servicio-content .image {
+    min-height: 50%;
+    border-radius: 55px;
+    box-shadow: -25px -21px 0px -3px rgba(0, 177, 237, 1);
 }
 .text-content h3 {
     font-size: 2rem;

@@ -11,13 +11,15 @@
   [numVisible]="1"
   [numScroll]="1"
   [circular]="true"
-  [autoplayInterval]= "3000"
+  [autoplayInterval]= "20000"
   [showIndicators]="false"
 >
   <ng-template pTemplate="item" let-servicio>
     <div class="servicio-card">
       <div class="servicio-content">
-        <img [src]="servicio.image" alt="{{ servicio.title }}" />
+        <img class="image" [src]="servicio.circle1" alt="{{ servicio.title }}" />
+        <img class="circle1" [src]="servicio.circle2" alt="{{ servicio.title }}" />
+        <img class="circle2" [src]="servicio.image" alt="{{ servicio.title }}" />
         <div class="text-content">
           <h3>{{ servicio.title }}</h3>
           <p>{{ servicio.description }}</p>
