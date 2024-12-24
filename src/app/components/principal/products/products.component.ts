@@ -23,10 +23,12 @@ export class ProductsComponent implements OnInit{
     this.text = Text.Principal.Products.Text1;
     this.products = Text.Principal.Products.ProductsList;
     
-    this.elementProduct1 = document.getElementById('product1');
-    this.elementProduct2 = document.getElementById('product2');
-    this.elementProduct3 = document.getElementById('product3');
-    this.elementProduct4 = document.getElementById('product4');
+    if(typeof document !== 'undefined'){
+      this.elementProduct1 = document.getElementById('product1');
+      this.elementProduct2 = document.getElementById('product2');
+      this.elementProduct3 = document.getElementById('product3');
+      this.elementProduct4 = document.getElementById('product4');
+    }
   }
   
   changeHover(index:number ){
