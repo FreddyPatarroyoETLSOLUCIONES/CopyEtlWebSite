@@ -53,11 +53,13 @@
 }
 .circle1{
     position: absolute;
-    top: 300;
+    top: 0;
+    right: -200px;
 }
 .circle2{
     position: absolute;
-    left: 20;
+    top: 100px;
+    right: -900px;
 }
 .servicio-content .image {
     min-height: 50%;
