@@ -1,5 +1,3 @@
-import { ServicesComponent } from "../components/services/services.component";
-
 export const Text: any = {
     Nabvar: {
 

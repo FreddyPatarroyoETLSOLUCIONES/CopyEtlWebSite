@@ -1,21 +1,31 @@
 <nav class="navbar">
   <div class="logo">
-    <img src="./assets/logo/logo_1.png" alt="Logo">
-    <a href="#">Soluciones</a>
+    <a  [routerLink]="['/principal']" routerLinkActive="router-link-active">
+      <img src="./assets/logo/logo_1.png" alt="Logo">
+      <span href="#">Soluciones</span>
+    </a>
   </div>
   <ul class="navbar-menu">
-    <li class="navbar-item">Inicio</li>
+    <li class="item navbar-item">
+      <a [routerLink]="['/principal']" routerLinkActive="router-link-active">Inicio</a>
+    </li>
     <li class="navbar-item dropdown">
       <span>Servicios</span>
       <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon">
       <div class="dropdown-menu">
         <ul class="dropdown-menu-items">
           <li class="item item_1">
-            <a [routerLink]="['/service']" routerLinkActive="router-link-active"  href="">Consultoría</a>
+            <a [routerLink]="['/consultingService']" routerLinkActive="router-link-active">Consultoría</a>
           </li>
-          <li class="item item_2">Innovación</li>
-          <li class="item item_3">BPO</li>
-          <li class="item item_4">Automatizacion de ambiente QA </li>
+          <li class="item item_2">
+            <a  [routerLink]="['/innovationService']" routerLinkActive="router-link-active">Innovación</a>
+          </li>
+          <li class="item item_3">
+            <a [routerLink]="['/bpoService']" routerLinkActive="router-link-active">BPO</a>
+          </li>
+          <li class="item item_4">
+            <a [routerLink]="['/environmentAutomation']" routerLinkActive="router-link-active"> Automatización de ambiente QA</a>            
+          </li>
         </ul>
       </div>
       
@@ -25,14 +35,22 @@
       <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon">
       <div class="dropdown-menu">
         <ul class="dropdown-menu-items">
-          <li class="item item_P1">Infocusnews</li>
-          <li class="item item_P2">Business Intelligence</li>
-          <li class="item item_P3">Innovación</li>
+          <li class="item item_P1">
+            <a href="">Infocusnews</a>
+          </li>
+          <li class="item item_P2">
+            <a href="">Business Intelligence</a>
+          </li>
+          <li class="item item_P3">
+            <a href="">Innovación</a>
+          </li>
         </ul>
       </div>
       
     </li>
-    <li class="navbar-item">Nosotros</li>
+    <li class="item navbar-item">
+      <a href="">Nosotros</a> 
+    </li>
   </ul>
   <div class="contacto">
     <a href="#" class="contacto-item">Contacto</a>
