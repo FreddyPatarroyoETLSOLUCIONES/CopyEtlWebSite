@@ -57,8 +57,8 @@ body {
     --box_border_width: 4px; /* Grosor del borde */
     --box_border_radius: 40px; /* Radio del borde para esquinas redondeadas */ 
     --box_border_radius_options: 15px; /* Radio del borde para esquinas redondeadas */ 
-    --box_shadow: -5px 9px 10px -3px rgba(87, 87, 87, 0.35);
-    --box-shadow_two_sides: 0px 0px 20px 3px rgba(87, 87, 87, 0.35);
+    --box_shadow: -5px 9px 10px -3px rgba(70, 70, 70, 0.35);
+    --box-shadow_two_sides: 0px 0px 20px 3px rgba(70, 70, 70, 0.35);
     --box_container: #F7FDFF;
 }
 
