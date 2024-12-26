@@ -4,6 +4,9 @@ import { ConsultingServiceComponent } from './components/consulting-service/cons
 import { InnovationServiceComponent } from './components/innovation-service/innovation-service.component';
 import { BpoServiceComponent } from './components/bpo-service/bpo-service.component';
 import { EnvironmentAutomationServiceComponent } from './components/environment-automation-service/environment-automation-service.component';
+import { InfocusnewsProductComponent } from './components/infocusnews-product/infocusnews-product.component';
+import { BusinessIntelligenceProductComponent } from './components/business-intelligence-product/business-intelligence-product.component';
+import { InnovationProductComponent } from './components/innovation-product/innovation-product.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'principal', pathMatch: 'full'},
@@ -12,4 +15,7 @@ export const routes: Routes = [
     {path: 'innovationService', component: InnovationServiceComponent},
     {path: 'bpoService', component: BpoServiceComponent},
     {path: 'environmentAutomation', component: EnvironmentAutomationServiceComponent},
+    {path: 'infocusnwesProduct', component: InfocusnewsProductComponent},
+    {path: 'businessIntelligenceProduct', component: BusinessIntelligenceProductComponent},
+    {path: 'innovationProduct', component: InnovationProductComponent},
 ];
