@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nabvar',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './nabvar.component.html',
   styleUrl: './nabvar.component.css'
 })

@@ -12,7 +12,8 @@ import { ServicesComponent } from './components/services/services.component';
     NabvarComponent,
     PrincipalComponent,
     FooterComponent,
-    ServicesComponent
+    ServicesComponent,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

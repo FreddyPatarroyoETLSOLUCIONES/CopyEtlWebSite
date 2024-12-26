@@ -94,3 +94,7 @@ ul {
 .p-icon{
     margin: 20px;
 }
+
+.p-galleria-item-prev-icon{
+    visibility: visible;
+}
