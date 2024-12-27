@@ -109,6 +109,7 @@
     background: var(--pure_primary_color);
     cursor: pointer;
     color: var(--pure_white);
+    text-decoration: none;
 }
 
 .products .components .product.active .content_info .info .body_info .button{

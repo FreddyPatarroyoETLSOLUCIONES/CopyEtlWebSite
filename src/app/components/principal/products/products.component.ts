@@ -1,10 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Text } from '../../../models/texts';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-products',
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    RouterModule
+  ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })

@@ -21,7 +21,7 @@
                         <div class="text_info">
                             <p> {{product.text}} </p>
                         </div>
-                        <a class="button">
+                            <a class="button" [routerLink]="[product.url]" routerLinkActive="router-link-active">
                             <p> ver mas </p> <img src="./assets/icons/cursor.png" alt=""> 
                         </a>
                     </div>
