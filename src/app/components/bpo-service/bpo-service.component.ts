@@ -29,7 +29,7 @@ export class BpoServiceComponent implements OnInit{
     this.imageTitle = './assets/wallpapers/wallp_bpo.png';
     this.titleDescription = 'Aplicación de técnicas de reingeniería Optimizando tiempos';
     this.description = 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.';
-    this.image = './assets/images/consultoria_left.png';
+    this.image = './assets/images/bpo_left.png';
     this.subTitleDescription = '¿En qué consiste?';
     this.subDescription = `<p>Business Process Outsourcing Dentro de los Servicios tercerizados tenemos: </p> 
                             </br>

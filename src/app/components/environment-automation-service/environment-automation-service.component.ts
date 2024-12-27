@@ -31,4 +31,5 @@ export class EnvironmentAutomationServiceComponent implements OnInit{
                             <p>Con nuestra solución, podrás optimizar la gestión y configuración de tus entornos de prueba de manera ágil y escalable. </p>`;
     this.imageContact = './assets/wallpapers/contact_qa.png';
   }
+  
 }
