@@ -23,15 +23,12 @@ export class ProductsComponent implements OnInit{
     this.text = Text.Principal.Products.Text1;
     this.products = Text.Principal.Products.ProductsList;
     
-    if(typeof document !== 'undefined'){
-      this.elementProduct1 = document.getElementById('product1');
-      this.elementProduct2 = document.getElementById('product2');
-      this.elementProduct3 = document.getElementById('product3');
-      this.elementProduct4 = document.getElementById('product4');
-    }
+    this.assignIdDocument();
   }
   
   changeHover(index:number ){
+    this.assignIdDocument();
+    
     switch (index) {
       case 0:
         this.elementProduct1.classList.add('active');
@@ -75,6 +72,18 @@ export class ProductsComponent implements OnInit{
         this.elementProduct4.classList.remove('active');
         break;
     }
-    
+  }
+
+  assignIdDocument = ():void => {
+    if(this.elementProduct1 == undefined || this.elementProduct1 == null ||
+      this.elementProduct2 == undefined || this.elementProduct2 == null ||
+      this.elementProduct3 == undefined || this.elementProduct3 == null ||
+      this.elementProduct4 == undefined || this.elementProduct4 == null
+    ){
+      this.elementProduct1 = document.getElementById('product1');
+      this.elementProduct2 = document.getElementById('product2');
+      this.elementProduct3 = document.getElementById('product3');
+      this.elementProduct4 = document.getElementById('product4');
+    }
   }
 }
