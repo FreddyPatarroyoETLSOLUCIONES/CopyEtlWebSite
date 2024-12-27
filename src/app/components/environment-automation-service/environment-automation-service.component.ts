@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesComponent } from '../../items/services/services.component';
+import { QuestionComponent } from './question/question.component';
+import { NumbersComponent } from './numbers/numbers.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @Component({
   selector: 'app-environment-automation-service',
-  imports: [ServicesComponent],
+  imports: [ServicesComponent, QuestionComponent, NumbersComponent, AccordionComponent],
   templateUrl: './environment-automation-service.component.html',
   styleUrl: './environment-automation-service.component.css'
 })
