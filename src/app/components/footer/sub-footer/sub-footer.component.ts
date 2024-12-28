@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sub-footer',
@@ -22,6 +23,8 @@ export class SubFooterComponent implements OnInit{
     'Nosotros'
   ]
   
+  constructor(private router: Router) {}
+
   ngOnInit(): void {
   }
   
@@ -31,12 +34,24 @@ export class SubFooterComponent implements OnInit{
       'Servicio': 'carousel',
       'Productos': 'products',
     };
-  
-    const sectionId = sectionMap[section];
-    const sectionElement = document.getElementById(sectionId);
-  
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (section === 'Inicio') {
+      this.router.navigate(['/principal']);
+    }
+    if (section === 'Servicio') {
+      this.router.navigate(['/principal']);
+    }
+    if (section === 'Productos') {
+      this.router.navigate(['/principal']);
+    }
+    if (section === 'Nosotros') {
+      this.router.navigate(['/aboutUs']);
+    } else {
+      const sectionId = sectionMap[section];
+      const sectionElement = document.getElementById(sectionId);
+
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   }
   
