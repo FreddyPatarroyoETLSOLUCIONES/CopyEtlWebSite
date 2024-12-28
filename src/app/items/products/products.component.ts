@@ -28,5 +28,11 @@ export class ProductsComponent implements OnInit{
   ngOnInit(): void {
     this.imageTitle = 'url(' + this.imageTitle + ')';
     this.imageContact = 'url(' + this.imageContact + ')'
+
+    window.scroll({
+      top: 0,
+      left: 0,
+      //behavior: "smooth",
+    })
   }
 }

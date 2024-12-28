@@ -48,10 +48,10 @@ export const Text: any = {
             Title1: 'Innovar con las tendencias tecnológicas',
             Text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             ProductsList: [
-                { title: 'Infocusnews', icon: './assets/icons/text.png', text: 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos…' },
-                { title: 'ETL (BI) Business Intelligence', icon: './assets/icons/db.png', text: 'Servicio de gestión en nube o infraestructura propia del cliente para diseñar…' },
-                { title: 'Motor de Sugerencias', icon: './assets/icons/start.png', text: 'El motor de sugerencia mide las preferencias de los clientes a cada una de ellas…' },
-                { title: 'Innovación', icon: './assets/icons/podio.png', text: 'Identificación de las preferencias individuales de sus clientes con máximo detalle…' },
+                { title: 'Infocusnews', icon: './assets/icons/text.png', text: 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos…', url:'/infocusnwesProduct' },
+                { title: 'ETL (BI) Business Intelligence', icon: './assets/icons/db.png', text: 'Servicio de gestión en nube o infraestructura propia del cliente para diseñar…', url:'/businessIntelligenceProduct' },
+                { title: 'Motor de Sugerencias', icon: './assets/icons/start.png', text: 'El motor de sugerencia mide las preferencias de los clientes a cada una de ellas…', url:'/infocusnwesProduct' },
+                { title: 'Innovación', icon: './assets/icons/podio.png', text: 'Identificación de las preferencias individuales de sus clientes con máximo detalle…', url:'/innovationProduct' },
             ]
         },
         InfoValues: {

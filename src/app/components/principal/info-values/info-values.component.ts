@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CarouselModule } from 'primeng/carousel';
 import { GalleriaModule } from 'primeng/galleria';
 import { Text } from '../../../models/texts';
 
