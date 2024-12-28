@@ -7,6 +7,7 @@ import { EnvironmentAutomationServiceComponent } from './components/environment-
 import { InfocusnewsProductComponent } from './components/infocusnews-product/infocusnews-product.component';
 import { BusinessIntelligenceProductComponent } from './components/business-intelligence-product/business-intelligence-product.component';
 import { InnovationProductComponent } from './components/innovation-product/innovation-product.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'principal', pathMatch: 'full'},
@@ -18,4 +19,5 @@ export const routes: Routes = [
     {path: 'infocusnwesProduct', component: InfocusnewsProductComponent},
     {path: 'businessIntelligenceProduct', component: BusinessIntelligenceProductComponent},
     {path: 'innovationProduct', component: InnovationProductComponent},
+    {path: 'aboutUs', component: AboutUsComponent},
 ];

@@ -64,6 +64,11 @@ body {
     --background_section_numbers: #00B1ED;
     --cards_section_numbers: #ffff;
 
+    --card_ability_color: #F0EAFF;
+    --card_ability_color_hover: #C5D9E4;
+
+    --highlight_color: #9A61EE;
+
 }
 
 body{
@@ -96,6 +101,11 @@ body{
 
         --background_section_numbers: #1C222C;
         --cards_section_numbers: #293241;
+
+        --card_ability_color: #1D2126;
+        --card_ability_color_hover: #293241;
+
+        --highlight_color: #00B1ED;
 
     }
 }
