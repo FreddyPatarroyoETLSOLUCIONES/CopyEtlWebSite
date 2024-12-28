@@ -25,4 +25,19 @@ export class SubFooterComponent implements OnInit{
   ngOnInit(): void {
   }
   
+  scrollToSection(section: string): void {
+    const sectionMap: { [key: string]: string } = {
+      'Inicio': 'welcome',
+      'Servicio': 'carousel',
+      'Productos': 'products',
+    };
+  
+    const sectionId = sectionMap[section];
+    const sectionElement = document.getElementById(sectionId);
+  
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  
 }

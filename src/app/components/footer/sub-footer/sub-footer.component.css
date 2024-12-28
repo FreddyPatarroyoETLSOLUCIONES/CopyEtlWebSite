@@ -73,7 +73,10 @@
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--pure_white);
-
+    cursor: pointer;
+}
+.sub_footer .content_footer .content_menu_footer .content-menu .menu-items .item a:hover{
+    color: var(--hover_color);
 }
 
 .sub_footer .content_footer .content_image{

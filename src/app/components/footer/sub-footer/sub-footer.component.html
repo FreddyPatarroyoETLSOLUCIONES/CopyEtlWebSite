@@ -25,7 +25,7 @@
                 <div class="content-menu">
                     <ul class="menu-items">
                         <li class="item" *ngFor="let item of menuFooter">
-                            <a href=""> {{item}} </a>
+                            <a (click)="scrollToSection(item)"> {{item}} </a>
                         </li>
                     </ul>
                 </div>

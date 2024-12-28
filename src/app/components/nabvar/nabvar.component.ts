@@ -9,4 +9,10 @@ import { RouterModule } from '@angular/router';
 })
 export class NabvarComponent {
   menuItems = [];
+  scrollToContact(): void {
+    const carouselElement = document.getElementById('contact');
+    if (carouselElement) {
+      carouselElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

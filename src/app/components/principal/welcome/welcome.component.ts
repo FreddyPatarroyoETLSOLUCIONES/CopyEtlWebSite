@@ -17,4 +17,11 @@ export class WelcomeComponent implements OnInit{
     this.SubTitle = Text.Principal.Welcome.Subtitle1;
     this.Text = Text.Principal.Welcome.Text1;
   }
+  scrollToCarousel(): void {
+    const carouselElement = document.getElementById('carousel');
+    if (carouselElement) {
+      carouselElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  
 }
