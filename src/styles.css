@@ -37,6 +37,7 @@ body {
     --text_color: #0D0E11; /* Texto principal */
     --muted_text_color: #1D1E1C; /* Texto secundario */
     --hover_color: #00b2edc0; /* Hover sobre enlaces o botones */
+    --hover_color_footer: #C5D9E4; /* Hover sobre enlaces o botones */
     --background_form: #C5D9E4; /* Fondo del formulario (tema claro) */
     --background_skills: #ffffff; /* Fondo del skills (tema claro) */
     --background_input: #EDF9FF; /* Fondo del formulario (tema claro) */
@@ -89,6 +90,7 @@ body{
         --text_color: #FFFFFF; /* Texto principal */
         --muted_text_color: #FFFFFF; /* Texto secundario */
         --hover_color: #00b2edc0; /* Hover sobre enlaces o botones */
+        --hover_color_footer: #C5D9E4; /* Hover sobre enlaces o botones */
         --background_form: #293241; /* Fondo del formulario (tema oscuro) */
         --background_skills: #293241; /* Fondo del skills (tema oscuro) */
         --background_input: #1C222C; /* Fondo del formulario (tema oscuro) */

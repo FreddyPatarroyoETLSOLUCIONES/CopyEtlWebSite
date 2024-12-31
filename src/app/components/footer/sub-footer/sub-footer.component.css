@@ -76,7 +76,8 @@
     cursor: pointer;
 }
 .sub_footer .content_footer .content_menu_footer .content-menu .menu-items .item a:hover{
-    color: var(--hover_color);
+    color: var(--hover_color_footer);
+    font-weight: var(--font_weight_semi_bold);
 }
 
 .sub_footer .content_footer .content_image{
