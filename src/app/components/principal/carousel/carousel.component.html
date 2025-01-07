@@ -21,10 +21,10 @@
         <div class="text-content">
           <h3>{{ servicio.title }}</h3>
           <p>{{ servicio.description }}</p>
-          <button class="custom_button">
+          <a class="custom_button" [routerLink]="[servicio.url]" routerLinkActive="router-link-active">
             <span class="button_text">Ver más</span>
             <img src="./assets/icons/arrow_icon.png" alt="Arrow Icon" class="button_icon">
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -15,21 +15,24 @@ export const Text: any = {
                     description: 'Servicios de asesoría integral en gestión de procesos para garantizar que las soluciones tecnológicas.',
                     image: './assets/images/consultoria.jpg',
                     circle1: './assets/icons/circle1.png',
-                    circle2: './assets/icons/circle2.png'
+                    circle2: './assets/icons/circle2.png',
+                    url: '/consultingService'
                 },
                 {
                     title: 'Innovación',
                     description: 'Servicios de incluyen procesos de reingeniería, analítica, gestión, y procedimientos de datos para identificar causa raíz de problemas en una organización que sean solucionables mediante el uso de tecnología.',
                     image: './assets/images/innovacion.jpg',
                     circle1: './assets/icons/circle1.png',
-                    circle2: './assets/icons/circle2.png'
+                    circle2: './assets/icons/circle2.png',
+                    url: '/innovationService'
                 },
                 {
                     title: 'BPO',
                     description: 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.',
                     image: './assets/images/bpo.jpg',
                     circle1: './assets/icons/circle1.png',
-                    circle2: './assets/icons/circle2.png'
+                    circle2: './assets/icons/circle2.png',
+                    url: '/bpoService'
                 },
             ]
         },

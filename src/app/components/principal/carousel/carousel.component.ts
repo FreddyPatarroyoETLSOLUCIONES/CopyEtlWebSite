@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { Text } from '../../../models/texts';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [
+    CarouselModule,
+    RouterModule
+  ],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
   host: { ngSkipHydration: 'true' },

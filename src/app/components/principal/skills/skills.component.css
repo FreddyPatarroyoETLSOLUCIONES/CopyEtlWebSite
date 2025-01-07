@@ -5,6 +5,33 @@
     box-shadow: var(--box-shadow_two_sides);
 }
 
+.skills .content_circle{
+    position: absolute;
+    width: 95%;
+    height: auto;
+}
+
+.skills .circle{
+    position: absolute;
+    width: 5%;
+    z-index: 100;
+}
+
+.skills .circle.circle1{
+    top: 0;
+    left: 0;
+}
+
+.skills .circle.circle2{
+    top: 500px;
+    left: 0;
+}
+
+.skills .circle.circle3{
+    top: 300px;
+    right: 0;
+}
+
 .skills .content_skills{
     position: relative;
     width: 80%;
