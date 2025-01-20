@@ -5,30 +5,33 @@
     nuestros clientes a través de nuestros servicios.
   </p>
 </div>
+
 <div class="margin_carousel">
-  <p-carousel
-  [value]="servicios"
-  [numVisible]="1"
-  [numScroll]="1"
-  [circular]="true"
-  [autoplayInterval]= "20000"
-  [showIndicators]="false"
->
-  <ng-template pTemplate="item" let-servicio>
-    <div class="servicio-card">
-      <div class="servicio-content">
-        <img class="image" [src]="servicio.image" alt="{{ servicio.title }}" />
-        <div class="text-content">
-          <h3>{{ servicio.title }}</h3>
-          <p>{{ servicio.description }}</p>
-          <a class="custom_button" [routerLink]="[servicio.url]" routerLinkActive="router-link-active">
-            <span class="button_text">Ver más</span>
-            <img src="./assets/icons/arrow_icon.png" alt="Arrow Icon" class="button_icon">
-          </a>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000" *ngFor="let servicio of servicios">
+        <div class="servicio-card">
+          <div class="servicio-content">
+            <img class="image" [src]="servicio.image" alt="{{ servicio.title }}" />
+            <div class="text-content">
+              <h3>{{ servicio.title }}</h3>
+              <p>{{ servicio.description }}</p>
+              <a class="custom_button" [routerLink]="[servicio.url]" routerLinkActive="router-link-active">
+                <span class="button_text">Ver más</span>
+                <img src="./assets/icons/arrow_icon.png" alt="Arrow Icon" class="button_icon">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </ng-template>
-</p-carousel>
-
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>

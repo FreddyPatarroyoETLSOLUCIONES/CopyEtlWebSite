@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { GalleriaModule } from 'primeng/galleria';
 import { Text } from '../../../models/texts';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-info-values',
-  imports: [GalleriaModule],
+  imports: [CommonModule],
   templateUrl: './info-values.component.html',
   styleUrl: './info-values.component.css',
   host: { ngSkipHydration: 'true' },
- 
 })
 export class InfoValuesComponent implements OnInit{
   services!:any[];

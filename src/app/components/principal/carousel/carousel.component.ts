@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { CarouselModule } from 'primeng/carousel';
 import { Text } from '../../../models/texts';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
   imports: [
-    CarouselModule,
-    RouterModule
+    RouterModule,
+    CommonModule
   ],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],

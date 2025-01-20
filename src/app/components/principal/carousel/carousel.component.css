@@ -3,7 +3,6 @@
 }
 
 .margin_carousel{
-    width: calc(100% - 200px);
     margin: 0 auto;
 }
 .p-carousel-items-container {
@@ -50,6 +49,7 @@
     align-items:center;
     gap: 1.5rem;
     max-width: 100%;
+    width: 70%;
 }
 .circle1{
     position: absolute;
