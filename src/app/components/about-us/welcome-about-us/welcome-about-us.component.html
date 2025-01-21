@@ -1,0 +1,24 @@
+<div class="about_us">
+    <div class="box_content">
+      <h3>{{ aboutUsContent.title }}</h3>
+      <h2>
+        {{ aboutUsContent.subtitlePrefix }}
+        <span class="highlight">{{ aboutUsContent.subtitleHighlight }}</span>
+      </h2>
+      <p>{{ aboutUsContent.description }}</p>
+    </div>
+    <div class="image">
+      <img [src]="aboutUsContent.image" alt="about_us">
+    </div>
+    <div class="skills">
+      <div
+        *ngFor="let skill of skills"
+        class="card"
+        [ngClass]="{ select: skill.isSelected }"
+      >
+        <h3>{{ skill.title }}</h3>
+        <p>{{ skill.description }}</p>
+      </div>
+    </div>
+  </div>
+  

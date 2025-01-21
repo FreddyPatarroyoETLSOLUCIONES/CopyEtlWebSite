@@ -1,0 +1,133 @@
+.products{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.products .title {
+    width: 70%;
+    margin: auto;
+}
+
+.products .title h2{
+    color: var(--pure_primary_color);
+    text-align: center;
+    font-weight: var(--font_weight_extra-bold);
+    font-size: 2.5rem;
+}
+
+.products .text{
+    color: var(--text_color);
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+
+.products .components{
+    background: var(--background_form);
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products .components .product{
+    width: 18%;
+    background: var(--card_color);
+    border-radius: 40px;
+    box-shadow: var(--box_shadow);
+}
+
+.products .components .product:first-child{
+    margin-left: 0px;
+}
+
+.products .components .product.active{
+    width: 40%;
+    background: var(--withe);
+}
+
+.products .components .product .content_info{
+    padding: 30px;
+}
+
+.products .components .product .content_info .info .title_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+}
+
+.products .components .product .content_info .info .title_info h3{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--text_color);
+    font-size: 1.5rem;
+    font-weight: var(--font_weight_semi_bold);
+}
+
+.products .components .product .content_info .info .title_info .icon{
+    text-align: center;
+}
+
+.products .components .product .content_info .info .title_info .icon img{
+    width: 38px;
+}
+
+.products .components .product .content_info .info .body_info .text_info{
+    height: 10vh;
+    overflow: hidden;
+    width: 80%;
+}
+
+.products .components .product .content_info .info .body_info .text_info p{
+    color: var(--text_color);
+    display: -webkit-box; 
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.products .components .product .content_info .info .body_info .button{
+    width: 80%;
+    border-radius: 40px;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin-top: 30px;
+    background: var(--pure_primary_color);
+    cursor: pointer;
+    color: var(--pure_white);
+    text-decoration: none;
+}
+
+.products .components .product.active .content_info .info .body_info .button{
+    width: 50%;
+}
+
+.products .components .product .content_info .info .body_info .button:hover {
+    background-color: var(--hover_color);
+    box-shadow: 0 0 0 2px var(--background_color),
+    0 0 0 3px var(--hover_color)
+}
+
+.products .components .product .content_info .info .body_info .button img {
+    width: 15px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .products .components{
+        width: 80%;
+    }
+}

@@ -1,0 +1,58 @@
+<nav class="navbar">
+  <div class="logo">
+    <a  [routerLink]="['/principal']" routerLinkActive="router-link-active">
+      <img src="./assets/logo/logo_1.png" alt="Logo">
+      <span href="#">Soluciones</span>
+    </a>
+  </div>
+  <ul class="navbar-menu">
+    <li class="item navbar-item">
+      <a [routerLink]="['/principal']" routerLinkActive="router-link-active">Inicio</a>
+    </li>
+    <li class="navbar-item dropdown">
+      <span>Servicios</span>
+      <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon">
+      <div class="dropdown-menu">
+        <ul class="dropdown-menu-items">
+          <li class="item item_1">
+            <a [routerLink]="['/consultingService']" routerLinkActive="router-link-active">Consultoría</a>
+          </li>
+          <li class="item item_2">
+            <a  [routerLink]="['/innovationService']" routerLinkActive="router-link-active">Innovación</a>
+          </li>
+          <li class="item item_3">
+            <a [routerLink]="['/bpoService']" routerLinkActive="router-link-active">BPO</a>
+          </li>
+          <li class="item item_4">
+            <a [routerLink]="['/environmentAutomation']" routerLinkActive="router-link-active"> Automatización de ambiente QA</a>            
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+    <li class="navbar-item dropdown">
+      <span>Productos</span>
+      <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon">
+      <div class="dropdown-menu">
+        <ul class="dropdown-menu-items">
+          <li class="item item_P1">
+            <a [routerLink]="['/infocusnwesProduct']" routerLinkActive="router-link-active">Infocusnews</a>
+          </li>
+          <li class="item item_P2">
+            <a [routerLink]="['/businessIntelligenceProduct']" routerLinkActive="router-link-active">Business Intelligence</a>
+          </li>
+          <li class="item item_P3">
+            <a [routerLink]="['/innovationProduct']" routerLinkActive="router-link-active">Innovación</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+    <li class="item navbar-item">
+      <a [routerLink]="['/aboutUs']" routerLinkActive="router-link-active">Nosotros</a> 
+    </li>
+  </ul>
+  <div class="contacto">
+    <button (click)="scrollToContact()" class="contacto-item">Contacto</button>
+  </div>
+</nav>
