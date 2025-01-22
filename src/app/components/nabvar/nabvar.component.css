@@ -41,14 +41,14 @@
     font-size: 1.5rem;
   }
   
-  .navbar-menu {
+  .navbar_menu {
     display: flex;
     list-style: none;
     justify-content: center;
     flex-grow: 1;
   }
   
-  .navbar-item {
+  .navbar_item {
     position: relative;
     padding: 0;
     cursor: pointer;
@@ -56,7 +56,7 @@
     text-align: center;
   }
 
-  .navbar-item a{
+  .navbar_item a{
     display: block;
     text-decoration: none;
     padding: 8px 18px;
@@ -64,7 +64,7 @@
     color: var(--text_color);
   }
   
-  .navbar-item a:hover {
+  .navbar_item a:hover {
     background-color: #00b2edc0;
     box-shadow: 0 0 0 2px var(--background_color),
     0 0 0 3px #00b2edc0
@@ -85,18 +85,18 @@
     0 0 0 3px #00b2edc0
   }
   
-  .dropdown-icon {
+  .dropdown_icon {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease;
     margin-left: 10px;
   }
   
-  .dropdown:hover .dropdown-icon {
+  .dropdown:hover .dropdown_icon {
     transform: rotate(45deg);
   }
   
-  .dropdown-menu {
+  .dropdown_menu {
     display: block;
     position: absolute;
     top: 100%;
@@ -109,21 +109,21 @@
     pointer-events: none;   
     z-index: 1000;
   }
-  .dropdown-menu-items{
+  .dropdown_menu_items{
     background-color: var(--card_container_color);
     list-style: none;
     margin-top: 10px;
     border-radius: 0px 20px 20px 20px;
     box-shadow: var(--box_shadow);
   }
-  .dropdown:hover .dropdown-menu {
+  .dropdown:hover .dropdown_menu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto; 
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
-  .dropdown-menu .dropdown-menu-items li {
+  .dropdown_menu .dropdown_menu_items li {
     padding: 0px;
     cursor: pointer;
     opacity: 0;
@@ -132,44 +132,44 @@
     text-align: left;
   }
   
-  .dropdown-menu li a{
+  .dropdown_menu li a{
     display: block;
     text-decoration: none;
     color: var(--text_color);
     padding: 12px;
   }
   
-  .dropdown-menu .item_1 a {
+  .dropdown_menu .item_1 a {
     animation-delay: 0.1s;
     border-radius: 0 20px 0 0;
   }
   
-  .dropdown-menu .item_2 a{
+  .dropdown_menu .item_2 a{
     animation-delay: 0.2s;
   }
   
-  .dropdown-menu .item_3 a{
+  .dropdown_menu .item_3 a{
     animation-delay: 0.3s;
   }
-  .dropdown-menu .item_4 a {
+  .dropdown_menu .item_4 a {
     animation-delay: 0.4s;
     border-radius: 0 0 20px 20px;
   }
-  .dropdown-menu .item_P1 a{
+  .dropdown_menu .item_P1 a{
     animation-delay: 0.1s;
     border-radius: 0 20px 0 0;
   }
   
-  .dropdown-menu .item_P2 a{
+  .dropdown_menu .item_P2 a{
     animation-delay: 0.2s;
   }
   
-  .dropdown-menu .item_P3 a{
+  .dropdown_menu .item_P3 a{
     animation-delay: 0.3s;
     border-radius: 0 0 20px 20px;
   }
   
-  .dropdown-menu li a:hover {
+  .dropdown_menu li a:hover {
     background-color: var(--hover_color);
   }
   
