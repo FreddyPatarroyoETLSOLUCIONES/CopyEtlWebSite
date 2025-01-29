@@ -74,6 +74,7 @@
 .flip_card_front{
     background-color: var(--card_ability_color);
     color: var(--text_color);
+    box-shadow: var(--box-shadow_two_sides);
 }
 .flip_card_back{
     background-color: var(--card_ability_color_hover);

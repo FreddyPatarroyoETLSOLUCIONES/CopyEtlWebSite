@@ -60,15 +60,16 @@ body {
     --box_container: #F7FDFF;
     --box_container_image: #F0EAFF;    
 
-
-
     --background_section_numbers: #00B1ED;
     --cards_section_numbers: #ffff;
 
-    --card_ability_color: #F0EAFF;
+    --card_ability_color: #FFFFFF;
     --card_ability_color_hover: #C5D9E4;
 
     --highlight_color: #9A61EE;
+
+    /*Cards Nosotros*/
+    --card_aboutUs_color: #F7FDFF;
 
 }
 
@@ -108,6 +109,9 @@ body{
         --card_ability_color_hover: #293241;
 
         --highlight_color: #00B1ED;
+
+        --card_aboutUs_color: #293241;
+
 
     }
 }

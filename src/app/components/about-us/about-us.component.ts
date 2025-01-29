@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { WelcomeAboutUsComponent } from './welcome-about-us/welcome-about-us.component';
 import { CounterComponent } from '../principal/counter/counter.component';
 import { AbilityComponent } from './ability/ability.component';
+import { InfoAboutUsComponent } from './info-about-us/info-about-us.component';
 
 @Component({
   selector: 'app-about-us',
-  imports: [WelcomeAboutUsComponent, CounterComponent, AbilityComponent],
+  imports: [WelcomeAboutUsComponent, CounterComponent, AbilityComponent, InfoAboutUsComponent],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })
