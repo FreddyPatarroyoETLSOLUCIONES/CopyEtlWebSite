@@ -97,37 +97,38 @@
     overflow: hidden;
 }
 
-.products .components .product .content_info .info .body_info .button{
-    width: 80%;
-    border-radius: 40px;
-    padding: 2%;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: center;
-    margin-top: 30px;
-    background: var(--pure_primary_color);
-    cursor: pointer;
-    color: var(--pure_white);
-    text-decoration: none;
+.custom_button{
+    margin-top: 50px;
 }
 
-.products .components .product.active .content_info .info .body_info .button{
-    width: 50%;
-}
-
-.products .components .product .content_info .info .body_info .button:hover {
-    background-color: var(--hover_color);
-    box-shadow: 0 0 0 2px var(--background_color),
-    0 0 0 3px var(--hover_color)
-}
-
-.products .components .product .content_info .info .body_info .button img {
-    width: 15px;
-}
-
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1700px) {
     .products .components{
         width: 80%;
+    }
+
+    .products .components .product .custom_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .products .components .product.active .custom_button{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .products .components .product .custom_button .button_text{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 50%;
+    }
+
+    .products .components .product.active .custom_button .button_text{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
     }
 }
