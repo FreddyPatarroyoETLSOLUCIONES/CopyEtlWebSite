@@ -71,6 +71,11 @@ body {
     /*Cards Nosotros*/
     --card_aboutUs_color: #F7FDFF;
 
+    .filter{
+        filter: none;
+    }
+    
+
 }
 
 body{
@@ -112,7 +117,12 @@ body{
 
         --card_aboutUs_color: #293241;
 
-
+        .filter{
+            filter: 
+               drop-shadow(.5px .5px 0 rgba(255, 255, 255, 0.473))
+                drop-shadow(-.5px -.5px 0 rgba(255, 255, 255, 0.384))
+                drop-shadow(0 2px 3px rgba(0, 0, 0, 0.575));
+        }
     }
 }
 
