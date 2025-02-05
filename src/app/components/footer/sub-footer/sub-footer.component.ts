@@ -30,7 +30,7 @@ export class SubFooterComponent implements OnInit{
   
   scrollToSection(section: string): void {
     const sectionMap: { [key: string]: string } = {
-      'Inicio': 'welcome',
+      'Inicio': 'navbar',
       'Servicio': 'carousel',
       'Productos': 'products',
     };

@@ -142,11 +142,14 @@ body{
     border-radius: var(--box_border_radius_options);
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
 }
 .custom_button:hover {
     background-color: var(--hover_color);
-    box-shadow: 0 0 0 2px var(--background_color),
-    0 0 0 3px #00b2edc0
+    box-shadow: 0 0 0 2px var(--background_color), 
+                0 0 0 3px #00b2edc0;
+    text-decoration: none;
+    color: var(--pure_white);
 }
 .button_icon {
     width: 20px; 
