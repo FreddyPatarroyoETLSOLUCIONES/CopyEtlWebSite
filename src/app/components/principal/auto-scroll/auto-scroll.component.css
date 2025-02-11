@@ -2,9 +2,8 @@
     from {
         transform: translateX(0);
     }
-
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -13,7 +12,7 @@
     background: var(--background_form);
     white-space: nowrap;
     position: relative;
-    height: 12vh;
+    height: 14vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +44,12 @@
 }
 
 .logos_slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
+    display: flex;
+    animation: 45s slide infinite linear;
+    width: max-content;
 }
 
 .logos_slide img {
-    height: 50px;
+    height: 65px;
     margin: 0 40px;
 }
