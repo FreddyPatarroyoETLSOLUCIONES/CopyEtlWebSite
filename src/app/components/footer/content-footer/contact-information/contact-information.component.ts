@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Text } from '../../../../models/texts';
 
 @Component({
   selector: 'app-contact-information',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './contact-information.component.html',
   styleUrl: './contact-information.component.css'
 })
-export class ContactInformationComponent {
+export class ContactInformationComponent implements OnInit{
 
+  text!: string;
+  meansContact!: any[];
+
+  ngOnInit(): void {
+    this.text = Text.Footer.ContentFooter.ContactInformation.Text1;
+    this.meansContact = Text.Footer.ContentFooter.ContactInformation.MeansContact;
+    console.log(this.meansContact.length)
+  }
 }

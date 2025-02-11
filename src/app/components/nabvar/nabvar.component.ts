@@ -14,8 +14,6 @@ export class NabvarComponent implements OnInit{
 
   ngOnInit(): void {
     this.menuItems = Text.Nabvar.Menu;
-
-    console.log(this.menuItems[0].subMenu.length)
   }
 
 

@@ -2,35 +2,28 @@
 
 <div class="contact_information">
     <div class="text">
-        <p>Es fundamental para nosotros tener una comunicación fluída con nuestros clientes y poder hacer excelentes proyectos y negocios.</p>
+        <p> {{text}} </p>
     </div>
     
-    <div class="content_contact">
-        <div class="row_info">
-            <div class="content_info">
-                <img src="./../../../../assets/icons/phone.png" alt="">
-                <p>Numeros</p>
-                <p class="info">+57 1 300 4345</p>
+    <div class="content_contact" id="content_contact">
+        @for (meanContact of meansContact; track $index) {
+            <div class="row_info">
+                @for (meansContact1 of meanContact.MeansContact1; track $index) {
+                    <div class="content_info">
+                        <img [src]="meansContact1.img" alt="">
+                        <p>{{meansContact1.text}}</p>
+                        <p class="info">{{meansContact1.info}}</p>
+                    </div>
+                }
+                @for (meansContact2 of meanContact.MeansContact2; track $index) {
+                    <div class="content_info">
+                        <img [src]="meansContact2.img" alt="">
+                        <p>{{meansContact2.text}}</p>
+                        <p class="info">{{meansContact2.info}}</p>
+                    </div>
+                }
             </div>
-            <div class="content_info">
-                <img src="./../../../../assets/icons/mail.png" alt="">
-                <p>Correo</p>
-                <p class="info"> {{'info@etlsoluciones.com'}} </p>
-            </div>
-        </div>
-        
-        <div class="row_info">
-            <div class="content_info">
-                <img src="./../../../../assets/icons/whatsapp.png" alt="">
-                <p>Whatsapp</p>
-                <p class="info">+57 1 300 4345</p>
-            </div>
-            <div class="content_info">
-                <img src="./../../../../assets/icons/ubication.png" alt="">
-                <p>Oficina</p>
-                <p class="info">Carrera. 14 # 94a- 61,  Oficina 303</p>
-            </div>
-        </div>
+        }
     </div>
 
     <div class="map">

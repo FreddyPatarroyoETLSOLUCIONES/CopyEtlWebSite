@@ -2,13 +2,11 @@
     <div class="content_footer">
         <div class="content_info">
             <div class="logo">
-                <img src=".\assets\logo\logo_white.png" alt="">
+                <img [src]="logo" alt="">
             </div>
             
             <div class="text">
-                <p>
-                    ETL Soluciones presenta permanentemente nuevas oportunidades para profesionales interesados en un lugar de trabajo creciente, apasionado y orientado al equipo.
-                </p>
+                <p>{{text1}}</p>
             </div>
             
             <div class="social_networks">
@@ -20,7 +18,7 @@
             </div>
         </div>
         <div class="content_menu_footer">
-            <h2 class="title_menu">Menu</h2>
+            <h2 class="title_menu"> {{title1}} </h2>
             <nav>
                 <div class="content-menu">
                     <ul class="menu-items">
@@ -32,12 +30,10 @@
             </nav>
         </div>
         <div class="content_image">
-            <img src="./assets/images/image1.png" alt="">
+            <img [src]= img alt="">
         </div>
     </div>
     <div class="content_copyright">
-        <p class="copyright">
-            &copy; 2024 ETL Soluciones. Todos los derechos reservados.
-        </p>
+        <p class="copyright" [innerHTML]="text2"></p>
     </div>
 </div>

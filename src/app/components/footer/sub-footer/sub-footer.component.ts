@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Text } from '../../../models/texts';
 
 @Component({
   selector: 'app-sub-footer',
@@ -10,22 +11,24 @@ import { Router } from '@angular/router';
 })
 export class SubFooterComponent implements OnInit{
 
-  socialNetworks: any = [
-    {name: 'Facebook', Url: 'https://www.facebook.com/', img: './assets/socialNetworks/facebook.png'},
-    {name: 'Instagram', Url: 'https://www.instagram.com/', img: './assets/socialNetworks/instagram.png'},
-    {name: 'Linkedin', Url: 'https://co.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F', img: './assets/socialNetworks/linkedin.png'}
-  ]
+  logo!: string;
+  text1!: string;
+  socialNetworks!: any[];
+  title1!: string;
+  menuFooter!: string[];
+  img!: string[];
+  text2!: string;
 
-  menuFooter: string[] = [
-    'Inicio',
-    'Servicio',
-    'Productos',
-    'Nosotros'
-  ]
-  
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    this.logo = Text.Footer.SubFooter.Logo;
+    this.text1 = Text.Footer.SubFooter.Text1;
+    this.socialNetworks = Text.Footer.SubFooter.socialNetworks;
+    this.title1 = Text.Footer.SubFooter.Title1;
+    this.menuFooter = Text.Footer.SubFooter.Menu;
+    this.img = Text.Footer.SubFooter.Img;
+    this.text2 = Text.Footer.SubFooter.Text2;
   }
   
   scrollToSection(section: string): void {

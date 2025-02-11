@@ -119,12 +119,49 @@ export const Text: any = {
         }
     },
     Footer: {
-        text1: 'ETL Soluciones presenta permanentemente nuevas oportunidades para profesionales interesados en un lugar de trabajo creciente, apasionado y orientado al equipo.',
-        menu: [
-            'Inicio',
-            'Servicio',
-            'Productos',
-            'Nosotros',
-        ]
+        ContentFooter: {
+            ContactInformation: {
+                Text1: "Es fundamental para nosotros tener una comunicación fluída con nuestros clientes y poder hacer excelentes proyectos y negocios.",
+                MeansContact: [
+                    {
+                        MeansContact1: [
+                            {img:'./assets/icons/phone.png', text: 'Números', info: '+57 1 300 4345'},
+                            {img:'./assets/icons/mail.png', text: 'Correo', info: 'info@etlsoluciones.com'}
+                        ]
+                    },
+                    {
+                        MeansContact2: [
+                            {img:'./assets/icons/whatsapp.png', text: 'WhatsApp', info: '+57 1 300 4345'},
+                            {img:'./assets/icons/ubication.png', text: 'Oficina', info: 'Carrera. 14 # 94a- 61,  Oficina 303'}
+                        ]
+                    },
+                    {
+                        MeansContact3: [
+                            {img:'./assets/icons/whatsapp.png', text: 'WhatsApp', info: '+57 1 300 4345'},
+                            {img:'./assets/icons/ubication.png', text: 'Oficina', info: 'Carrera. 14 # 94a- 61,  Oficina 303'}
+                        ]
+                    }
+                ]
+            }
+        },
+        SubFooter: {
+            Logo: "./assets/logo/logo_white.png",
+            Text1: 'ETL Soluciones presenta permanentemente nuevas oportunidades para profesionales interesados en un lugar de trabajo creciente, apasionado y orientado al equipo.',
+            socialNetworks: [
+                {name: 'Facebook', Url: 'https://www.facebook.com/', img: './assets/socialNetworks/facebook.png'},
+                {name: 'Instagram', Url: 'https://www.instagram.com/', img: './assets/socialNetworks/instagram.png'},
+                {name: 'Linkedin', Url: 'https://co.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F', img: './assets/socialNetworks/linkedin.png'}
+            ],
+            
+            Title1: "Menu",
+            Menu: [
+                'Inicio',
+                'Servicio',
+                'Productos',
+                'Nosotros',
+            ],
+            Img:"./assets/images/image1.png",
+            Text2: "&copy; 2024 ETL Soluciones. Todos los derechos reservados."
+        }
     }
 }
