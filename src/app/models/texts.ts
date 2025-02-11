@@ -1,6 +1,20 @@
 export const Text: any = {
     Nabvar: {
-
+        Menu:[
+            {title: 'inicio', subMenu: [], link:'/principal'},
+            {title: 'Servicios', subMenu: [
+                {subTitle: 'Consultoría', link:'/consultingService'},
+                {subTitle: 'Innovación', link:'/innovationService'},
+                {subTitle: 'BPO', link:'/bpoService'},
+                {subTitle: 'Automatización de ambiente QA', link:'/environmentAutomation'}
+            ], link:''},
+            {title: 'Productos', subMenu: [
+                {subTitle: 'Infocusnews', link:'/infocusnwesProduct'},
+                {subTitle: 'Business Intelligence', link:'/businessIntelligenceProduct'},
+                {subTitle: 'Innovación', link:'/innovationProduct'},
+            ], link:''},
+            {title: 'Nosotros', subMenu: [], link:'/aboutUs'}
+        ]
     },
     Principal: {
         Welcome: {
@@ -9,6 +23,8 @@ export const Text: any = {
             Text1: 'Más de 10 años de experiencia, desarrollando soluciones tecnológicas innovadoras para sectores clave. Transformamos industrias con proyectos de alto impacto'
         },
         Services: {
+            Title: 'SERVICIOS TI',
+            Text: 'A través de las mejores prácticas de TI, damos soluciones de gran valor a nuestros clientes a través de nuestros servicios.',
             ServicesList: [
                 {
                     title: 'Consultoría',
@@ -103,6 +119,12 @@ export const Text: any = {
         }
     },
     Footer: {
-        text1: 'ETL Soluciones presenta permanentemente nuevas oportunidades para profesionales interesados en un lugar de trabajo creciente, apasionado y orientado al equipo.'
+        text1: 'ETL Soluciones presenta permanentemente nuevas oportunidades para profesionales interesados en un lugar de trabajo creciente, apasionado y orientado al equipo.',
+        menu: [
+            'Inicio',
+            'Servicio',
+            'Productos',
+            'Nosotros',
+        ]
     }
 }

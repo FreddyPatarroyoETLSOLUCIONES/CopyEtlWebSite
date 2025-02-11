@@ -15,10 +15,14 @@ import { CommonModule } from '@angular/common';
   host: { ngSkipHydration: 'true' },
 })
 export class CarouselComponent implements OnInit{
+  Title!: string;
+  Text!: string;
   servicios!: any[];
   //responsiveOptions: any[];
   
   ngOnInit(): void {
+    this.Title = Text.Principal.Services.Title;
+    this.Text = Text.Principal.Services.Text;
     this.servicios = Text.Principal.Services.ServicesList;
   }
 }
