@@ -9,6 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit{
   
+  @Input() titleContact!:string;
+  @Input() textContact!:string;
   @Input() imageContact!:string;
   
   ngOnInit(): void {

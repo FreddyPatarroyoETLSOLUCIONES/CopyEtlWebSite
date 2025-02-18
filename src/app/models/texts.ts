@@ -243,6 +243,100 @@ export const Text: any = {
             }
         }
     },
+    Products: {
+        Infocusnews: {
+            Title:{
+                Title: 'Infocusnews',
+                Text: 'Modelos estadísticos y de tendencia',
+                Img: './assets/wallpapers/wallp_infocusnews.png'
+            },
+            Description: {
+                Title: 'Información de valor de las compañías',
+                Text1: 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos y de tendencia sobre múltiples variables. Diseño, implementación, soporte a soluciones de telefonía de última generación con PBX I P.',
+                Img: './assets/images/infocusnews_right.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: `<p>El análisis de datos y la gestión adecuada de la información son unos componentes decisivos para el crecimiento de una compañía.</p> 
+                            </br> 
+                            <p>Por eso en ETL Soluciones implementamos innovadores modelos para ello.</p>
+                            </br> 
+                            <p>¿Qué esperas? Consúltanos.</p>`
+            },
+            Contact: {
+                Title: 'Contactanos',
+                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_infocusnews.png'
+            }
+        },
+        BusinessIntelligence: {
+            Title:{
+                Title: 'ETL (BI) Business Intelligence',
+                Text: 'En Tiempo Real',
+                Img: './assets/wallpapers/wallp_bi.png'
+            },
+            Description: {
+                Title: 'Análisis y Comportamiento de Mercados',
+                Text1: 'Servicios gestionables con herramientas en nube, que permiten visualizar en tiempo real y en términos de negocio, el comportamiento de variables claves para mejorar el proceso de toma de decisiones en una organización.',
+                Img: './assets/images/bi_right.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: `<p>Conjunto de procesos, aplicaciones y tecnologías que facilitan la obtención de datos, de manera que puedan ser aprovechados para la toma de decisiones.</p> 
+                            </br> 
+                            <p>A través de esta línea brindamos asesoría a nuestros clientes en el diseño e implementación de procesos, software y tecnología, para gestionar sus datos existentes en múltiples fuentes, convirtiéndolos en información de valor en la compañía.</p>
+                            </br> 
+                            <p>Consúltanos ahora y dale a tu empresa el impulso que te ofrece ETL Soluciones.</p>`
+            },
+            Contact: {
+                Title: 'Contactanos',
+                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_bi.png'
+            }
+        },
+        Innovation: {
+            Title:{
+                Title: 'Innovación',
+                Text: 'Productos de mayor interés o necesidad',
+                Img: './assets/wallpapers/wallp_innovation_p.png'
+            },
+            Description: {
+                Title: 'Análisis y Comportamiento de Mercados',
+                Text1: 'Identificación de las preferencias individuales de sus clientes con máximo detalle, le sugerirá en base a éstas qué productos pueden resultar de mayor interés o necesidad para cada cliente.',
+                Img: './assets/images/innovation_left.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: `<p>Los departamentos de TI han evolucionado con el tiempo, ahora se han vuelto un bien indispensable para las empresas al momento de cambios y soluciones innovadoras, transformando a los negocios y haciendo más notable su presencia en el mercado.</p> 
+                        </br> 
+                        <p>Consúltanos ahora y encuentra las soluciones ideales para tu empresa. En ETL Soluciones, estamos para servirte.</p>`
+            },
+            Contact: {
+                Title: 'Contactanos',
+                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_innovation_p.png'
+            }
+        },
+    },
+    AboutUs:{
+        Title: {
+            Title: 'ETL SOLUCIONES',
+            Text: 'Nuestra Empresa',
+            Img: './assets/wallpapers/image_aboutUs.jpg'
+        },
+        Info: {
+            Title: 'Expertos en soluciones de Alto Impacto',
+            Text: 'Somos una empresa joven, con ganas y experiencia de profesionales con más de 10 años en el mercado de servicios de tecnología y Sistemas de información, contamos con la participación en proyectos de alto impacto, desarrollamos soluciones de TI aplicadas en sectores como comunicaciones, transporte, comercio, logística, solidario, salud, legal y servicios.',
+            Item: [
+                {
+                    titleCard: 'Mejorar',
+                    descriptionCard: 'Modernización de aplicaciones existentes.'
+                },
+                {
+                    titleCard: 'Diseñar y Mejorar',
+                    descriptionCard: 'Diseño y desarrollo de aplicaciones Web y Desktop, configurable, escalables y seguras.'
+                },
+                {
+                    titleCard: 'Mantener y Soportar',
+                    descriptionCard: 'Integración de aplicaciones y servicios.'
+                }
+            ]
+        }
+    },
     Footer: {
         ContentFooter: {
             ContactInformation: {

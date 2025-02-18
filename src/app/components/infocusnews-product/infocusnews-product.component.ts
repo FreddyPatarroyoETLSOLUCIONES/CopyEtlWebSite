@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProductsComponent } from '../../items/products/products.component';
+import { Text } from '../../models/texts';
 
 @Component({
   selector: 'app-infocusnews-product',
@@ -16,21 +17,21 @@ export class InfocusnewsProductComponent implements OnInit{
   image!:string;
   subTitleDescription!:string;
   subDescription!:string;
+  titleContact!:string;
+  textContact!:string;
   imageContact!:string;
   
   ngOnInit(): void {
-    this.title = 'Infocusnews';
-    this.subTitle = 'Modelos estadísticos y de tendencia';
-    this.imageTitle = './assets/wallpapers/wallp_infocusnews.png';
-    this.titleDescription = 'Información de valor de las compañías';
-    this.description = 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos y de tendencia sobre múltiples variables. Diseño, implementación, soporte a soluciones de telefonía de última generación con PBX I P.';
-    this.image = './assets/images/infocusnews_right.png';
-    this.subTitleDescription = '¿En que consiste?';
-    this.subDescription = `<p>El análisis de datos y la gestión adecuada de la información son unos componentes decisivos para el crecimiento de una compañía.</p> 
-                            </br> 
-                            <p>Por eso en ETL Soluciones implementamos innovadores modelos para ello.</p>
-                            </br> 
-                            <p>¿Qué esperas? Consúltanos.</p>`;
-    this.imageContact = './assets/wallpapers/contact_infocusnews.png';
+    this.title = Text.Products.Infocusnews.Title.Title;
+    this.subTitle = Text.Products.Infocusnews.Title.Text;
+    this.imageTitle = Text.Products.Infocusnews.Title.Img;
+    this.titleDescription = Text.Products.Infocusnews.Description.Title;
+    this.description = Text.Products.Infocusnews.Description.Text1;
+    this.image = Text.Products.Infocusnews.Description.Img;
+    this.subTitleDescription = Text.Products.Infocusnews.Description.SubTitle;
+    this.subDescription = Text.Products.Infocusnews.Description.Text2;
+    this.titleContact = Text.Products.Infocusnews.Contact.Title;
+    this.textContact = Text.Products.Infocusnews.Contact.Text;
+    this.imageContact = Text.Products.Infocusnews.Contact.Img;
   }
 }

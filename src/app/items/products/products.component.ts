@@ -23,6 +23,8 @@ export class ProductsComponent implements OnInit{
   @Input() image!:string;
   @Input() subTitleDescription!:string;
   @Input() subDescription!:string;
+  @Input() titleContact!:string;
+  @Input() textContact!:string;
   @Input() imageContact!:string;
   
   ngOnInit(): void {

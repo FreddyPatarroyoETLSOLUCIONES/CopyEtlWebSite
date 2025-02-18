@@ -1,8 +1,8 @@
-<section class="banner" *ngFor="let banner of bannerData" style="background-image: url('/assets/wallpapers/image_aboutUs.jpg');">
+<section class="banner" [ngStyle]="{'background-image': imageTitle}">
   <div class="banner-overlay">
     <div class="banner-content">
-      <h1> {{ banner.title }} </h1>
-      <p> {{ banner.subTitle }} </p>
+      <h1> {{ title }} </h1>
+      <p> {{ subTitle }} </p>
     </div>
   </div>
 </section>

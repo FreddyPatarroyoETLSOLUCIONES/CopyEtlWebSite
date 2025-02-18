@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsComponent } from '../../items/products/products.component';
+import { Text } from '../../models/texts';
 
 @Component({
   selector: 'app-business-intelligence-product',
@@ -16,21 +17,21 @@ export class BusinessIntelligenceProductComponent implements OnInit{
   image!:string;
   subTitleDescription!:string;
   subDescription!:string;
+  titleContact!:string;
+  textContact!:string;
   imageContact!:string;
 
   ngOnInit(): void {
-    this.title = 'ETL (BI) Business Intelligence';
-    this.subTitle = 'En Tiempo Real';
-    this.imageTitle = './assets/wallpapers/wallp_bi.png';
-    this.titleDescription = 'Análisis y Comportamiento de Mercados';
-    this.description = 'Servicios gestionables con herramientas en nube, que permiten visualizar en tiempo real y en términos de negocio, el comportamiento de variables claves para mejorar el proceso de toma de decisiones en una organización.';
-    this.image = './assets/images/bi_right.png';
-    this.subTitleDescription = '¿En que consiste?';
-    this.subDescription = `<p>Conjunto de procesos, aplicaciones y tecnologías que facilitan la obtención de datos, de manera que puedan ser aprovechados para la toma de decisiones.</p> 
-                            </br> 
-                            <p>A través de esta línea brindamos asesoría a nuestros clientes en el diseño e implementación de procesos, software y tecnología, para gestionar sus datos existentes en múltiples fuentes, convirtiéndolos en información de valor en la compañía.</p>
-                            </br> 
-                            <p>Consúltanos ahora y dale a tu empresa el impulso que te ofrece ETL Soluciones.</p>`;
-    this.imageContact = './assets/wallpapers/contact_bi.png';
+    this.title = Text.Products.BusinessIntelligence.Title.Title;
+    this.subTitle = Text.Products.BusinessIntelligence.Title.Text;
+    this.imageTitle =  Text.Products.BusinessIntelligence.Title.Img;
+    this.titleDescription = Text.Products.BusinessIntelligence.Description.Title;
+    this.description = Text.Products.BusinessIntelligence.Description.Text1;
+    this.image = Text.Products.BusinessIntelligence.Description.Img;
+    this.subTitleDescription = Text.Products.BusinessIntelligence.Description.SubTitle;
+    this.subDescription = Text.Products.BusinessIntelligence.Description.Text2;
+    this.titleContact = Text.Products.BusinessIntelligence.Contact.Title;
+    this.textContact = Text.Products.BusinessIntelligence.Contact.Text;
+    this.imageContact = Text.Products.BusinessIntelligence.Contact.Img;
   }
 }

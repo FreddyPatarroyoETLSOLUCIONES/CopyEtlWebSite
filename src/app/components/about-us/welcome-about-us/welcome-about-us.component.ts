@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-welcome-about-us',
@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './welcome-about-us.component.html',
   styleUrls: ['./welcome-about-us.component.css']
 })
-export class WelcomeAboutUsComponent {
-  bannerData = [
-    {
-      title: 'ETL SOLUCIONES',
-      subTitle: 'Nuestra Empresa',
-      imageTitle: './assets/wallpapers/image_aboutUs.jpg'
-    }
-  ];
+export class WelcomeAboutUsComponent implements OnInit{
+
+  @Input() title!: string;
+  @Input() subTitle!: string;
+  @Input() imageTitle!: string;
+  
+
+  ngOnInit(): void {
+    this.imageTitle = 'url(' + this.imageTitle + ')';
+  }
 }
