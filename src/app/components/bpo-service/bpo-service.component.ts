@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesComponent } from '../../items/services/services.component';
 import { CommonModule } from '@angular/common';
+import { Text } from '../../models/texts';
 
 @Component({
   selector: 'app-bpo-service',
@@ -21,31 +22,21 @@ export class BpoServiceComponent implements OnInit{
   image!:string;
   subTitleDescription!:string;
   subDescription!:string;
+  titleContact!:string;
+  textContact!:string;
   imageContact!:string;
   
   ngOnInit(): void {
-    this.title = 'BPO';
-    this.subTitle = 'Optimizando tiempos de respuesta';
-    this.imageTitle = './assets/wallpapers/wallp_bpo.png';
-    this.titleDescription = 'Aplicación de técnicas de reingeniería Optimizando tiempos';
-    this.description = 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.';
-    this.image = './assets/images/bpo_left.png';
-    this.subTitleDescription = '¿En qué consiste?';
-    this.subDescription = `<p>Business Process Outsourcing Dentro de los Servicios tercerizados tenemos: </p> 
-                            </br>
-                            <ul class="list" >
-                              <li>Soporte</li>
-                              <li>Desarrollo de aplicaciones</li>
-                              <li>Gestión de infraestructura TI</li>
-                              <li>Adecuación y optimización de centros de datos</li>
-                            </ul> 
-                            </br>
-                            <p>Una de las soluciones que tenemos para ofrecerte, es el outsourcing, que consiste en que una empresa contrata nuestros servicios para hacer algo en lo que dicha empresa no se especializa. </p> 
-                            </br> 
-                            <p>Esto libera a la primera organización para enfocarse en la función central de su negocio. </p>
-                            </br> 
-                            <p>Consúltanos ahora. </p>`;
-                            
-    this.imageContact = './assets/wallpapers/contact_bpo.png';
+    this.title = Text.Service.BPO.Title.Title;
+    this.subTitle = Text.Service.BPO.Title.Text;
+    this.imageTitle = Text.Service.BPO.Title.Img;
+    this.titleDescription = Text.Service.BPO.Description.Title;
+    this.description = Text.Service.BPO.Description.Text1;
+    this.image = Text.Service.BPO.Description.Img;
+    this.subTitleDescription = Text.Service.BPO.Description.SubTitle;
+    this.subDescription = Text.Service.BPO.Description.Text2;
+    this.titleContact = Text.Service.BPO.Contact.Title;
+    this.textContact = Text.Service.BPO.Contact.Text;
+    this.imageContact = Text.Service.BPO.Contact.Img;
   }
 }

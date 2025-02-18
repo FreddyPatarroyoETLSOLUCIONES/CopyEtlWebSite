@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-question',
@@ -7,23 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './question.component.html',
   styleUrl: './question.component.css'
 })
-export class QuestionComponent {
-  benefits = [
-    {
-      title: 'Consistencia y eficiencia',
-      description: 'Minimiza errores y asegura que los entornos de prueba se configuren de manera uniforme.'
-    },
-    {
-      title: 'Reducción de costos y tiempos',
-      description: 'Menos tareas manuales, más tiempo para tareas estratégicas.'
-    },
-    {
-      title: 'Escalabilidad',
-      description: 'Crea y gestiona nuevos entornos rápidamente, adaptándose a las necesidades de tus proyectos.'
-    },
-    {
-      title: 'Control de versiones',
-      description: 'Rastrea cambios y mantiene coherencia en cada entorno.'
-    }
-  ];
+export class QuestionComponent implements OnInit{
+  @Input() title!:string;
+  @Input() text!:string;
+  @Input() benefits!: any[];
+  @Input() image!: string;
+
+  ngOnInit(): void {
+    
+  }
 }

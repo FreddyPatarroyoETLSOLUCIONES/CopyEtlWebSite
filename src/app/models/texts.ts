@@ -118,6 +118,131 @@ export const Text: any = {
             ]
         }
     },
+    Service: {
+        Consulting: {
+            Title:{
+                Title: 'Consultoría',
+                Text: 'Mayor retorno a su Negocio',
+                Img: './assets/wallpapers/wallp_consultoria.jpg'
+            },
+            Description: {
+                Title: 'Asesorías Integrales',
+                Text1: 'Servicios de asesoría integral en gestión de procesos para garantizar que las soluciones tecnológicas de su organización son mayor retorno posible a su negocio.',
+                Img: './assets/images/consultoria_left.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: '<p>Consisten en un servicio de asesoría especializada e independiente al que recurren las empresas en diferentes industrias con el fin de encontrar, soluciones a uno o más problemas y/o mejoras de negocio. </p> </br> <p>Nuestros servicios de consultoría son parte de las grandes soluciones que te ofrece ETL. </p> </br> <p>Las consultorías consisten en un servicio de asesoría especializada e independiente al que recurren las empresas en diferentes industrias con el fin de encontrar, soluciones a uno o más problemas y/o mejoras de negocio. Por esto, nuestros servicios de consultoría son parte de las grandes soluciones que te ofrece ETL. </p>'
+            },
+            Contact: {
+                Title: 'Contactanos',
+                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_consultoria.jpg'
+            }
+        },
+        Innovation: {
+            Title:{
+                Title: 'Innovación',
+                Text: 'Identificando la raíz de cada problema',
+                Img: './assets/wallpapers/wallp_innovation.png'
+            },
+            Description: {
+                Title: 'Reingeniería, Analítica, Gestión y Procedimientos de Datos',
+                Text1: 'Servicios de incluyen procesos de reingeniería, analítica, gestión, y procedimientos de datos para identificar causa raíz de problemas en una organización que sean solucionables mediante el uso de tecnología.',
+                Img: './assets/images/innovation_left.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: '<p>A pesar de que la palabra innovación se enfoca en la novedad, se relaciona de igual manera con mejorar y potenciar áreas ya establecidas, ya sean productos servicios o sistemas. </p> </br> <p>En ETL nos encargamos de impulsar a tu empresa a través de diferentes soluciones digitales. </p> </br> <p>Consúltanos ahora. </p>'
+            },
+            Contact: {
+                Title: 'Contactanos',
+                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_innovation.png'
+            }
+        },
+        BPO: {
+            Title:{
+                Title: 'BPO',
+                Text: 'Optimizando tiempos de respuesta',
+                Img: './assets/wallpapers/wallp_bpo.png'
+            },
+            Description: {
+                Title: 'Aplicación de técnicas de reingeniería Optimizando tiempos',
+                Text1: 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.',
+                Img: './assets/images/bpo_left.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: `<p>Business Process Outsourcing Dentro de los Servicios tercerizados tenemos: </p> 
+                            </br>
+                            <ul class="list" >
+                                <li>Soporte</li>
+                                <li>Desarrollo de aplicaciones</li>
+                                <li>Gestión de infraestructura TI</li>
+                                <li>Adecuación y optimización de centros de datos</li>
+                            </ul> 
+                            </br>
+                            <p>Una de las soluciones que tenemos para ofrecerte, es el outsourcing, que consiste en que una empresa contrata nuestros servicios para hacer algo en lo que dicha empresa no se especializa. </p> 
+                            </br> 
+                            <p>Esto libera a la primera organización para enfocarse en la función central de su negocio. </p>
+                            </br> 
+                            <p>Consúltanos ahora. </p>`
+            },
+            Contact: {
+                Title: 'Contactanos',
+                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_bpo.png'
+            }
+        },
+        EnvironmentAutomation: {
+            Title:{
+                Title: 'Automatización de la Gestión de Ambientes de QA',
+                Text: 'Optimiza y simplifica tus entornos de prueba',
+                Img: './assets/wallpapers/wallp_qa.png'
+            },
+            Description: {
+                Title: 'Lorem ipsum dolor',
+                Text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                Img: './assets/images/qa_left.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: `<p>La automatización en ambientes de QA (Quality Assurance) permite reducir tareas manuales, mejorar la consistencia en los entornos y maximizar el tiempo que los equipos dedican a la creación de valor.  </p> 
+                        </br> 
+                        <p>Con nuestra solución, podrás optimizar la gestión y configuración de tus entornos de prueba de manera ágil y escalable. </p>`
+            },
+            Contact: {
+                Title: 'Contactanos',
+                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_qa.png'
+            },
+            Question: {
+                Title: `¿Por Qué Automatizar <span class="highlight">Ambientes de QA?</span>`,
+                Text: 'Automatizar los ambientes de QA significa lograr procesos más consistentes, reducir tiempos y mejorar la eficiencia operativa. Descubre los beneficios clave que esta tecnología puede ofrecer a tu equipo y proyecto.',
+                Items: [
+                    {Title: 'Consistencia y eficiencia', Text: 'Minimiza errores y asegura que los entornos de prueba se configuren de manera uniforme.'},
+                    {Title: 'Reducción de costos y tiempos', Text: 'Menos tareas manuales, más tiempo para tareas estratégicas.'},
+                    {Title: 'Escalabilidad', Text: 'Crea y gestiona nuevos entornos rápidamente, adaptándose a las necesidades de tus proyectos.'},
+                    {Title: 'Control de versiones', Text: 'Rastrea cambios y mantiene coherencia en cada entorno.'}
+                ],
+                Img: './assets/icons/sun.png' 
+            },
+            Numbers: {
+                Title: '¿Cómo Funciona Nuestro Proceso de Automatización?',
+                Text: 'Nuestro proceso de automatización es integral y se adapta a las necesidades de cada proyecto. Desde la evolución inicial hasta la implementación de herramientas avanzadas, cada paso está diseñado para optimizar y simplificar la gestión de tus entornos de QA.',
+                Items: [
+                    {Title: 'Evaluación de Requisitos', Text: 'Identificamos los entornos necesarios y las herramientas más adecuadas para cada proyecto.'},
+                    {Title: 'Selección de Herramientas', Text: 'Utilizamos tecnologías avanzadas como Docker, Kubernetes y Terraform para optimizar cada entorno.'},
+                    {Title: 'Definición de Arquitectura', Text: 'Diseñamos la infraestructura ideal de QA, asegurando servidores, bases de datos y servicios confiables.'},
+                    {Title: 'Configuración Automatizada', Text: 'mplementamos CI/CD para la automatización, agilizando la creación y configuración de pruebas.'},
+                ]
+            },
+            Accordion: {
+                Title: 'Apoyo Completo en <span class="highlight">Documentación y Capacitación</span>',
+                Text: 'Nos aseguramos de que todo el proceso y las configuraciones queden documentados de manera clara y concisa. Además, capacitamos a tu equipo en el uso de herramientas y procesos, garantizando una fácil adopción y mantenimiento del sistema.',
+                Img: './assets/images/image_automation.jpg',
+                Items: [
+                    {Text: 'Accesibilidad'},
+                    {Text: 'Practicidad'},
+                    {Text: 'Visualización'},
+                    {Text: 'Refuerzo'},
+                ]
+            }
+        }
+    },
     Footer: {
         ContentFooter: {
             ContactInformation: {
@@ -131,12 +256,6 @@ export const Text: any = {
                     },
                     {
                         MeansContact2: [
-                            {img:'./assets/icons/whatsapp.png', text: 'WhatsApp', info: '+57 1 300 4345'},
-                            {img:'./assets/icons/ubication.png', text: 'Oficina', info: 'Carrera. 14 # 94a- 61,  Oficina 303'}
-                        ]
-                    },
-                    {
-                        MeansContact3: [
                             {img:'./assets/icons/whatsapp.png', text: 'WhatsApp', info: '+57 1 300 4345'},
                             {img:'./assets/icons/ubication.png', text: 'Oficina', info: 'Carrera. 14 # 94a- 61,  Oficina 303'}
                         ]

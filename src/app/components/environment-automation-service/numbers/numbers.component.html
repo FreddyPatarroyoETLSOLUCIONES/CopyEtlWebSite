@@ -1,19 +1,17 @@
 <div class="process-container">
   <img class="piece" src="assets/images/piece_3.png" alt="">
-  <h2>¿Cómo Funciona Nuestro Proceso de Automatización?</h2>
+  <h2> {{title}} </h2>
   <img class="line" src="assets/icons/Line.png" alt="">
   <p class="description">
-    Nuestro proceso de automatización es integral y se adapta a las necesidades de cada proyecto. Desde la evolución
-    inicial hasta la implementación de herramientas avanzadas, cada paso está diseñado para optimizar y simplificar la
-    gestión de tus entornos de QA.
+    {{text}}
   </p>
 
   <div class="steps-grid">
-    <div *ngFor="let step of steps" class="step-card">
-      <div class="step-number">{{ step.number }}</div>
+    <div *ngFor="let step of steps;  index as index" class="step-card">
+      <div class="step-number">{{ index+1 }}</div>
       <div class="step-content">
-        <h3>{{ step.title }}</h3>
-        <p>{{ step.description }}</p>
+        <h3>{{ step.Title }}</h3>
+        <p>{{ step.Text }}</p>
       </div>
     </div>
   </div>

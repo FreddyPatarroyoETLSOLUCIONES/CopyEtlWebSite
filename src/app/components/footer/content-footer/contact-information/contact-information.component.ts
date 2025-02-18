@@ -15,6 +15,5 @@ export class ContactInformationComponent implements OnInit{
   ngOnInit(): void {
     this.text = Text.Footer.ContentFooter.ContactInformation.Text1;
     this.meansContact = Text.Footer.ContentFooter.ContactInformation.MeansContact;
-    console.log(this.meansContact.length)
   }
 }

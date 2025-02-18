@@ -1,22 +1,21 @@
 <div class="qa-automation-container">
-    <div class="header_container">
-        <h2>¿Por Qué Automatizar <span class="highlight">Ambientes de QA?</span></h2>
+    <div class="header_container">    
+        <h2 [innerHTML]="title"></h2>
+        
         <img src="assets/icons/Line.png" alt="line">
         <p class="description">
-            Automatizar los ambientes de QA significa lograr procesos más consistentes, reducir tiempos y mejorar la
-            eficiencia operativa. Descubre los beneficios clave que esta tecnología puede ofrecer a tu equipo y
-            proyecto.
+            {{text}}
         </p>
     </div>
     <div class="benefits-grid">
         <div *ngFor="let benefit of benefits" class="benefit-card">
             <div class="header_card">
-                <h3>{{ benefit.title }}</h3>
+                <h3>{{ benefit.Title }}</h3>
                 <div class="icon-wrapper">
-                    <img src="assets/icons/sun.png" alt="sun_icon">
+                    <img [src]="image" alt="sun_icon">
                 </div>
             </div>
-            <p>{{ benefit.description }}</p>
+            <p>{{ benefit.Text }}</p>
         </div>
     </div>
 </div>

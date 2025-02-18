@@ -102,3 +102,15 @@ ul {
 .p-galleria-item-prev-icon{
     visibility: visible;
 }
+
+@media(prefers-color-scheme: light ) {
+    .carousel-control-next-icon {
+        filter: invert(1) grayscale(0);
+    }
+    
+    .carousel-control-prev-icon{
+        filter: invert(1) grayscale(0);
+    }
+}
+
+

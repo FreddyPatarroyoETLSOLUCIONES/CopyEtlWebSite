@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesComponent } from '../../items/services/services.component';
+import { Text } from '../../models/texts';
 
 @Component({
   selector: 'app-innovation-service',
@@ -16,17 +17,21 @@ export class InnovationServiceComponent implements OnInit{
   image!:string;
   subTitleDescription!:string;
   subDescription!:string;
+  titleContact!:string;
+  textContact!:string;
   imageContact!:string;
   
   ngOnInit(): void {
-    this.title = 'Innovación';
-    this.subTitle = 'Identificando la raíz de cada problema';
-    this.imageTitle = './assets/wallpapers/wallp_innovation.png';
-    this.titleDescription = 'Reingeniería, Analítica, Gestión y Procedimientos de Datos';
-    this.description = 'Servicios de incluyen procesos de reingeniería, analítica, gestión, y procedimientos de datos para identificar causa raíz de problemas en una organización que sean solucionables mediante el uso de tecnología.';
-    this.image = './assets/images/innovation_left.png';
-    this.subTitleDescription = '¿En qué consiste?';
-    this.subDescription = '<p>A pesar de que la palabra innovación se enfoca en la novedad, se relaciona de igual manera con mejorar y potenciar áreas ya establecidas, ya sean productos servicios o sistemas. </p> </br> <p>En ETL nos encargamos de impulsar a tu empresa a través de diferentes soluciones digitales. </p> </br> <p>Consúltanos ahora. </p>';
-    this.imageContact = './assets/wallpapers/contact_innovation.png';
+    this.title = Text.Service.Innovation.Title.Title;
+    this.subTitle = Text.Service.Innovation.Title.Text;
+    this.imageTitle = Text.Service.Innovation.Title.Img;
+    this.titleDescription = Text.Service.Innovation.Description.Title;
+    this.description = Text.Service.Innovation.Description.Text1;
+    this.image = Text.Service.Innovation.Description.Img;
+    this.subTitleDescription = Text.Service.Innovation.Description.SubTitle;
+    this.subDescription = Text.Service.Innovation.Description.Text2;
+    this.titleContact = Text.Service.Innovation.Contact.Title;
+    this.textContact = Text.Service.Innovation.Contact.Text;
+    this.imageContact = Text.Service.Innovation.Contact.Img;
   }
 }
