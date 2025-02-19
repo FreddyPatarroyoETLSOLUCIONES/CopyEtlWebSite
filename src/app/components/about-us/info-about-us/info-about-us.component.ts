@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-info-about-us',
@@ -8,13 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./info-about-us.component.css']
 })
 export class InfoAboutUsComponent { 
-  infoData = [
-    {
-      titleDescription: 'Expertos en soluciones de Alto Impacto',
-      description: 'Somos una empresa joven, con ganas y experiencia de profesionales con más de 10 años en el mercado de servicios de tecnología y Sistemas de información, contamos con la participación en proyectos de alto impacto, desarrollamos soluciones de TI aplicadas en sectores como comunicaciones, transporte, comercio, logística, solidario, salud, legal y servicios.'
-    }
-    
-  ];
+
+  @Input() title!: string;
+  @Input() text!: string;
+  @Input() cardsData!: any[];
+
   cardsData1 = [
     {
       titleCard: 'Mejorar',

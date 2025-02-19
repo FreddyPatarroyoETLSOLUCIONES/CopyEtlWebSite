@@ -20,6 +20,9 @@ export class AboutUsComponent implements OnInit{
   titleInfo!: string;
   textInfo!: string;
   itemsInfo!: any[];
+  titleAbility!: string;
+  subTitleAbility!: string;
+  abilities!: any[];
 
   ngOnInit(): void {
     this.title = Text.AboutUs.Title.Title;
@@ -28,6 +31,9 @@ export class AboutUsComponent implements OnInit{
     this.titleInfo = Text.AboutUs.Info.Title;
     this.textInfo = Text.AboutUs.Info.Text;
     this.itemsInfo = Text.AboutUs.Info.Item;
+    this.titleAbility = Text.AboutUs.Ability.Title;
+    this.subTitleAbility = Text.AboutUs.Ability.SubTitle;
+    this.abilities = Text.AboutUs.Ability.Abilities;
 
     console.log(this.image)
 
