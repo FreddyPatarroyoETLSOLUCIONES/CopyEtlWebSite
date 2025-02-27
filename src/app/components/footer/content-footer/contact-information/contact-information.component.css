@@ -71,3 +71,28 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .contact_information .text{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .contact_information{
+        width: 100%;
+        margin: 50px auto;
+    }
+    .contact_information .content_contact .row_info:last-child{
+        margin-left: 0;
+    }
+    .contact_information .content_contact .row_info .content_info{
+        width: 50%;
+    }
+    
+
+}
+@media only screen and (max-width: 450px) {
+    .contact_information .content_contact .row_info{
+        flex-direction: column;
+    }
+}

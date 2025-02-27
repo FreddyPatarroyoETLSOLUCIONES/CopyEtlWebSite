@@ -1,7 +1,7 @@
 export const Text: any = {
     Nabvar: {
         Menu:[
-            {title: 'inicio', subMenu: [], link:'/principal'},
+            {title: 'Inicio', subMenu: [], link:'/principal'},
             {title: 'Servicios', subMenu: [
                 {subTitle: 'Consultoría', link:'/consultingService'},
                 {subTitle: 'Innovación', link:'/innovationService'},

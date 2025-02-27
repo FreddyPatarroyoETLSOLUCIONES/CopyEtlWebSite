@@ -66,10 +66,12 @@
 .skills .content_skills .info_skills .title{
     color: var(--text_color);
     text-align: left;
-    font-weight: var(--font_weight_extra-bold);
-    font-size: 1.8rem;
     margin-bottom: 5%;
     width: 100%;
+}
+.skills .content_skills .info_skills .title h3{
+    font-weight: var(--font_weight_extra_bold);
+    font-size: 2rem;
 }
 
 .skills .content_skills .info_skills .skills_list{
@@ -94,4 +96,33 @@
     border-radius: 50%;
     color: var(--pure_primary_color);
     font-weight:  var(----font_weight_semi_bold);
+}
+
+@media only screen and (max-width: 1200px){
+    .skills .content_skills img{
+        display: none;
+    }
+    .skills .content_skills{
+        justify-content: center;
+        left: 0;
+        width: calc(100vw - 100px);
+        margin: 0 auto;
+    }
+    .skills{
+        display: flex;
+        align-items: center;
+        padding: 40px 30px;
+    }
+    .skills .content_skills .info_skills{
+        right: 0;
+        align-items: center;
+    }
+    .skills .content_skills .info_skills .title{
+        text-align: center;
+        font-size: 2rem;
+        width: 75%;
+    }
+    .skills .content_skills .info_skills .skills_list{
+        width: 90%;
+    }
 }

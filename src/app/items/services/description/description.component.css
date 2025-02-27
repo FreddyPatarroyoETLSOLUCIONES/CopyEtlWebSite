@@ -86,3 +86,15 @@
     max-width: 40%;
     right: -200px;
   }
+
+  @media only screen and (max-width: 1200px){
+    .content{
+      flex-direction: column;
+    }
+    .image_1, .image_2{
+      display: none;
+    }
+    .text-container{
+      margin-bottom: 40px;
+    }
+  }

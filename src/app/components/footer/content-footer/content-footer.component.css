@@ -29,3 +29,14 @@
     z-index: -1;
 }
 
+@media only screen and (max-width: 1200px) {
+    .content_footer .sub_content_footer{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content_footer .img1,
+    .content_footer .img2{
+        display: none;
+    }
+}

@@ -6,7 +6,7 @@
 <div class="margin_carousel">
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000" *ngFor="let servicio of servicios">
+      <div class="carousel-item active" data-bs-interval="300000" *ngFor="let servicio of servicios">
         <div class="servicio-card">
           <div class="servicio-content">
             <img class="image" [src]="servicio.image" alt="{{ servicio.title }}" />
@@ -32,3 +32,20 @@
     </button>
   </div>
 </div>
+
+<div class="servicio-list">
+  <div class="servicio-card" *ngFor="let servicio of servicios">
+    <div class="servicio-content">
+      <img class="image" [src]="servicio.image" alt="{{ servicio.title }}" />
+      <div class="text-content">
+        <h3>{{ servicio.title }}</h3>
+        <p>{{ servicio.description }}</p>
+        <a class="custom_button" [routerLink]="[servicio.url]" routerLinkActive="router-link-active">
+          <span class="button_text">Ver más</span>
+          <img src="./assets/icons/arrow_icon.png" alt="Arrow Icon" class="button_icon">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+

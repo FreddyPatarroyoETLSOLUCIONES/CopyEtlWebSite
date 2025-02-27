@@ -31,6 +31,8 @@ export class ProductsComponent implements OnInit{
   }
   
   changeHover(index:number ){
+    if (window.innerWidth <= 1200) return;
+
     this.assignIdDocument();
     
     switch (index) {

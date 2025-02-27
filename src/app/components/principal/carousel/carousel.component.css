@@ -102,6 +102,9 @@ ul {
 .p-galleria-item-prev-icon{
     visibility: visible;
 }
+.servicio-list {
+    display: none;
+}
 
 @media(prefers-color-scheme: light ) {
     .carousel-control-next-icon {
@@ -113,4 +116,51 @@ ul {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    
+    .servicio-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .servicio-content .image {
+        box-shadow: none;
+        width: calc(100vw - 100px);
+        z-index: 100;
+    }
+    .servicio-content {
+        width: calc(100vw - 100px);
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 0;
+    }
+    .servicio-card{
+        margin: 30px auto;
+        width: 90%;
 
+    }
+    .margin_carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #carouselExampleInterval {
+        display: none;
+    }
+    .text-content{
+        background-color: var(--card_container_color);
+        padding: 40px;
+        padding-top: 80px;
+        margin-top: -50px;
+        z-index: 1;
+        width: calc(100vw - 100px);
+        border-radius: 0 0 50px 50px;
+    }
+    .servicio-header .title{
+        margin-top: 50px;
+    }
+    .servicio-header .description {
+        max-width: 80%;
+    }
+}

@@ -26,15 +26,32 @@
     color: var(--pure_white);
     padding: 10px 20px;
     border-radius: 5px;
-    width: auto;
+    width: 40%;
+    transform: translateY(-50%);
   }
   
   .service-text h3 {
     margin: 0 0 10px 0;
     font-size: 2.5rem;
+    font-weight: var(--font_weight_semi_bold);
   }
   
   .service-text p {
     margin: 0;
     font-size: 1.1rem;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
+        transform: translateY(-50%);
+
+  }
+
+  @media only screen and (max-width: 1200px){
+    .service-text {
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+    .service-text{
+      width: 60%;
+    }
   }
