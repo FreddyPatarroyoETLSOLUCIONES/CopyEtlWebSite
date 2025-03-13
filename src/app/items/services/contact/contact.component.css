@@ -53,3 +53,14 @@
   .banner .button:hover{
     background-color: #7a7a7a3d;
   }
+  @media only screen and (max-width: 1200px){
+    .banner .button{
+      width: 60%;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .banner-content p {
+      font-size: 1rem;
+    }
+
+  }

@@ -76,3 +76,26 @@
     line-height: 1.4;
     margin-top: 0.5rem;
 }
+
+@media only screen and (max-width: 1200px){
+    .piece{
+        display: none;
+    }
+    .process-container h2,
+    .process-container .description,
+    .steps-grid {
+        width: calc(100vw - 100px);
+        
+    }
+    .process-container h2{
+        font-size: 1.5rem;
+    }
+    .steps-grid {
+        grid-template-columns: none;
+        flex-direction: column;
+    }
+    .step-card{
+        text-align: center;
+        border-radius: 20px;
+    }
+}

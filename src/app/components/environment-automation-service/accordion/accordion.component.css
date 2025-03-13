@@ -63,3 +63,32 @@ img {
     color: var(--text_color);
     margin-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 1200px){
+    .container{
+        width: calc(100vw - 100px);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .skills-container{
+        width: calc(100vw - 100px);
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+    .indicator{
+        display: none;
+    }
+    .image-container{
+        border-radius: 20px;
+    }
+    img{
+        border-radius: 20px;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+}

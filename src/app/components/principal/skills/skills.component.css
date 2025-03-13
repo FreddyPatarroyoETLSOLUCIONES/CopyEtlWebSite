@@ -106,23 +106,37 @@
         justify-content: center;
         left: 0;
         width: calc(100vw - 100px);
-        margin: 0 auto;
+        align-items: center;
+        padding: 0;
+        border-radius: 20px;
     }
     .skills{
         display: flex;
         align-items: center;
-        padding: 40px 30px;
+        justify-content: center;
+        padding: 50px 0;
     }
     .skills .content_skills .info_skills{
-        right: 0;
+        padding: 20px;
         align-items: center;
+        right: inherit;
     }
     .skills .content_skills .info_skills .title{
+
         text-align: center;
-        font-size: 2rem;
-        width: 75%;
+        width: 90%;
+    }
+    .skills .content_skills .info_skills .title h3{
+        font-size: 1.5rem;
+        text-align: center;
     }
     .skills .content_skills .info_skills .skills_list{
         width: 90%;
+        left: 0;
+    }
+    .skills .circle.circle1,
+    .skills .circle.circle2,
+    .skills .circle.circle3{
+       display: none;
     }
 }

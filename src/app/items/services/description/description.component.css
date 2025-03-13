@@ -59,6 +59,7 @@
     font-size: 2rem;
     color: var(--primary_color);
     margin-bottom: 1rem;
+    font-weight: var(--font_weight_semi_bold);
   }
   
   .text-container p {
@@ -90,11 +91,36 @@
   @media only screen and (max-width: 1200px){
     .content{
       flex-direction: column;
+      padding: 0;
     }
     .image_1, .image_2{
       display: none;
     }
     .text-container{
       margin-bottom: 40px;
+    }
+    .dropdown-icon_1, .dropdown-icon_2{
+      display: none;
+    }
+    .image-container {
+      min-width: 100%;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .text-container {
+      border-radius: 20px;
+      text-align: center;
+      padding: 30px;
+    }
+    .title h1{
+      font-size: 2rem;
+      margin-top: 40px;
+    }
+    
+    .list li{
+      text-align: left;
     }
   }

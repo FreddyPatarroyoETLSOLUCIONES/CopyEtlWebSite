@@ -98,6 +98,7 @@
 @media only screen and (max-width: 1200px) {
     .sub_footer{
         margin: auto 50px;
+        border-radius: 20px 20px 0 0;
     }
     .sub_footer .content_footer .social_networks .link_social_networks {
         width: 100%;
@@ -123,10 +124,13 @@
     }
     .sub_footer .content_footer .content_info .logo {
         margin: 35px auto;
+        width: 100%;
+        background-repeat: inherit;
     }
     .sub_footer .content_footer .social_networks {
         margin: 0 auto;
-        width: 50%;
+        width: 100%;
+        background-repeat: inherit;
     }
 
 }

@@ -77,8 +77,10 @@
 
     .formContent {
         margin-bottom: 55px;
-        padding: 8% 50px;
+        padding: 15% 30px;
         width: calc(100vw - 100px);
         margin: auto;
+        border-radius: 20px;
+        text-align: center;
     }
 }

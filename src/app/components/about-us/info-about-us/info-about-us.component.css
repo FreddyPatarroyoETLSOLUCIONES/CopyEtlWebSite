@@ -109,3 +109,39 @@
     border: none;
 
 }
+
+@media only screen and (max-width: 1200px) {
+
+    .dropdown-icon_1,
+    .dropdown-icon_2 {
+        display: none;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .cards .card:nth-child(2) {
+        margin: 0;
+    }
+
+    .image_1,
+    .image_2 {
+        display: none;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+}

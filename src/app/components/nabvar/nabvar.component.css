@@ -61,6 +61,10 @@ span{
 .dropdown-menu .dropdown-item:hover {
   background-color: var(--primary_color);
 }
+.ms-3{
+  background-color: var(--primary_color);
+}
+
 @keyframes fadeInCascada {
   from {
     opacity: 0;
@@ -84,9 +88,11 @@ span{
 .navbar .btn-contacto:hover {
   background-color: var(--hover_color);
 }
-
-navbar-toggler-icon{
-  color: var(--text_color);
+.navbar-toggler{
+  border-color: transparent;
+}
+.navbar-toggler-icon{
+  font-size: 1.5rem;
 }
 
 .navbar-nav .nav-link{
@@ -95,4 +101,27 @@ navbar-toggler-icon{
 
 .navbar-collapse{
   text-align: center;
+  animation: fadeInCascada 0.4s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ms-3{
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+  .dropdown-menu{
+    border-radius: 0 0 20px 20px;
+  }
+  .navbar-nav .nav-link {
+    border-radius: 10px;
+  }
+  .navbar-nav .nav-link:hover {
+    background-color: #00b2ed00;
+    box-shadow: 0 0 0 0px #00b2ed00,
+      0 0 0 0px #00b2ed00
+  }
+  .navbar-nav .nav-link:focus{
+    background-color: var(--primary_color);
+
+  }
 }

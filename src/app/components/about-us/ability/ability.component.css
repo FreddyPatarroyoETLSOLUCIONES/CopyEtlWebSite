@@ -81,3 +81,35 @@
     color: var(--text_color);
     transform: rotateY(180deg);
 }
+
+@media only screen and (max-width: 1200px){
+    .ability{
+        margin: 0 auto;
+        text-align: center;
+        width: calc(100vw - 100px);
+        margin-bottom: 50px;
+    }
+    .section_card{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .flip_card{
+        width: 100%;
+    }
+    .flip_card_back{
+        border-radius: 20px;
+        display: flex;
+        transform: none !important;
+    }
+    .flip_card_front {
+        display: none;
+        transform: none;
+    }
+    .flip_card:hover .flip_card_inner{
+        transform: none;
+    }
+    .ability h2{
+        font-size: 1.8rem;
+    }
+}

@@ -138,6 +138,11 @@
         flex-direction: column;
         width: 100%;
         background-color: transparent;
+        border-radius: 20px;
+
+    }
+    .products .components .product{
+        border-radius: 20px;
     }
     .products .components .product.active,
     .products .components .product{

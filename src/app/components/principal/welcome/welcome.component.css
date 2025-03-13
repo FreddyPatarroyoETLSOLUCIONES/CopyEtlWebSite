@@ -1,6 +1,6 @@
 .contain {
     width: calc(100% - 200px);
-    height: 90vh;
+    height: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 .contain_text {
     max-width: 40%;
     text-align: left;
-    padding: 5px;
+    padding: 40px 0px;
 }
 
 .contain_image {
@@ -53,8 +53,8 @@
     bottom: 0;
     width: 45%;
     height: 100%;
-    object-fit: contain;
     z-index: 2;
+    
 }
 
 .wave {

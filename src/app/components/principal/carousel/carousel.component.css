@@ -128,6 +128,7 @@ ul {
         box-shadow: none;
         width: calc(100vw - 100px);
         z-index: 100;
+        border-radius: 30px;
     }
     .servicio-content {
         width: calc(100vw - 100px);
@@ -136,7 +137,7 @@ ul {
         gap: 0;
     }
     .servicio-card{
-        margin: 30px auto;
+        margin: 20px auto;
         width: 90%;
 
     }
@@ -155,7 +156,7 @@ ul {
         margin-top: -50px;
         z-index: 1;
         width: calc(100vw - 100px);
-        border-radius: 0 0 50px 50px;
+        border-radius: 0 0 20px 20px;
     }
     .servicio-header .title{
         margin-top: 50px;
