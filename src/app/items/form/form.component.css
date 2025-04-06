@@ -63,6 +63,10 @@
     margin-top: 50px;
 }
 
+.error_message {
+    color: var(--error_message);
+}
+
 @media only screen and (max-width: 1200px) {
 
     .formContent .form .form_item input,
